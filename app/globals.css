@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-charcoal font-body antialiased;
+}
+
+::selection {
+  @apply bg-forest/20;
+}
+
+:focus-visible {
+  outline: 2px solid #0e7a35;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Signature hazard-stripe divider — echoes the reflective safety striping
+   on every ARGO reaper unit. Used sparingly as a section signature. */
+.hazard-divider {
+  height: 6px;
+  background: repeating-linear-gradient(
+    135deg,
+    #0e7a35 0 18px,
+    #f2a900 18px 36px
+  );
+}
+
+.spec-label {
+  @apply font-mono text-[11px] uppercase tracking-[0.18em] text-forest-600;
+}
+
+.section-eyebrow {
+  @apply font-mono text-xs uppercase tracking-[0.25em] text-forest-500;
+}
+
+.container-px {
+  @apply mx-auto w-full max-w-[1320px] px-6 lg:px-10;
+}

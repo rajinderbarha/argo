@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-charcoal font-body antialiased;
+}
+
+::selection {
+  @apply bg-forest/20;
+}
+
+:focus-visible {
+  outline: 2px solid #0e7a35;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes argo-ripple {
+  from {
+    transform: scale(0);
+    opacity: 0.55;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes argo-glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(14, 122, 53, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(14, 122, 53, 0);
+  }
+}
+
+.glow-pulse {
+  animation: argo-glow-pulse 2.6s ease-in-out infinite;
+}
+
+/* Card hover border-glow: a soft animated ring that fades in on hover.
+   Pure CSS, GPU-friendly (opacity + box-shadow only, no layout impact). */
+.card-glow {
+  position: relative;
+  transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 1px rgba(14, 122, 53, 0);
+  transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+.card-glow:hover::after {
+  box-shadow: 0 0 0 1.5px rgba(14, 122, 53, 0.45), 0 0 28px -6px rgba(14, 122, 53, 0.35);
+}
+
+/* Subtle animated grain — extremely low-opacity, fixed, GPU compositing only. */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.025;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow-pulse {
+    animation: none;
+  }
+}
+
+/* Signature hazard-stripe divider — echoes the reflective safety striping
+   on every ARGO reaper unit. Used sparingly as a section signature. */
+.hazard-divider {
+  height: 6px;
+  background: repeating-linear-gradient(
+    135deg,
+    #0e7a35 0 18px,
+    #f2a900 18px 36px
+  );
+}
+
+.spec-label {
+  @apply font-mono text-[11px] uppercase tracking-[0.18em] text-forest-600;
+}
+
+.section-eyebrow {
+  @apply font-mono text-xs uppercase tracking-[0.25em] text-forest-500;
+}
+
+.container-px {
+  @apply mx-auto w-full max-w-[1320px] px-6 lg:px-10;
+}

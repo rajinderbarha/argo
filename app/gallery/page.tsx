@@ -26,8 +26,6 @@ const items = [
   { src: "/images/gallery/promo-red-farmer.webp", alt: "Punjab farmer with a red ARGO Mini Reaper in a paddy field", tag: "In the Field" },
   { src: "/images/gallery/promo-blue-farmer.webp", alt: "Punjab farmer with a blue ARGO Mini Reaper machine", tag: "In the Field" },
   { src: "/images/gallery/promo-red-tractor.webp", alt: "Red ARGO Mini Reaper mounted on a mini tractor in a field", tag: "In the Field" },
-  { src: "/images/gallery/banner-reaper-red.webp", alt: "ARGO Mini Reaper red — compact in size, powerful in performance", tag: "Reaper Range" },
-  { src: "/images/gallery/banner-reaper-green.webp", alt: "ARGO Mini Reaper green — 26+ tonnes of harvest capability", tag: "Reaper Range" },
   { src: "/images/gallery/rice-mill-lifestyle.webp", alt: "ARGO Rice Mill with a sack of freshly milled rice", tag: "Rice Mill" },
 ];
 

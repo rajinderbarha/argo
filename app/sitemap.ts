@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
 import { products } from "@/data/products";
-import { blogs } from "@/data/blogs";
 
 const BASE_URL = "https://www.argo-india.com";
 
@@ -10,8 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/products",
     "/gallery",
-    "/testimonials",
-    "/blog",
     "/contact",
     "/inquiry",
   ].map((route) => ({
@@ -28,12 +25,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const blogRoutes = blogs.map((b) => ({
-    url: `${BASE_URL}/blog/${b.slug}`,
-    lastModified: new Date(b.date),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
-
-  return [...staticRoutes, ...productRoutes, ...blogRoutes];
+  return [...staticRoutes, ...productRoutes];
 }

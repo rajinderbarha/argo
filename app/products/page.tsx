@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
-import { ProductBrowser } from "@/components/ui/ProductBrowser";
+import { ProductCategoryNav } from "@/components/ui/ProductCategoryNav";
 import { Reveal } from "@/components/ui/Reveal";
 import { products } from "@/data/products";
 import { buildMetadata } from "@/lib/seo";
@@ -22,12 +22,12 @@ export default function ProductsPage() {
             Our machines
           </h1>
           <p className="mt-4 max-w-xl text-[15px] text-charcoal/60">
-            ARGO Mini Reapers and rice mill machines, grouped by type. Tap any
-            machine to see photos, full details and to ask for a price.
+            Choose a category below to see our machines. Tap any machine for
+            photos, full details and to ask for a price.
           </p>
         </Reveal>
         <div className="mt-12">
-          <ProductBrowser products={products} />
+          <ProductCategoryNav products={products} />
         </div>
       </div>
     </div>

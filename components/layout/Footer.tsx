@@ -11,8 +11,8 @@ const columns = [
     links: [
       { href: "/about", label: "About ARGO" },
       { href: "/gallery", label: "Factory & Gallery" },
-      { href: "/testimonials", label: "Testimonials" },
-      { href: "/blog", label: "Blog" },
+      { href: "/products", label: "Our Machines" },
+      { href: "/contact", label: "Contact Us" },
     ],
   },
   {

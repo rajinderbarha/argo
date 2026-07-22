@@ -4,54 +4,71 @@ export const company = {
   tagline: "Your Partner in Farming",
   founded: 2014,
   description:
-    "ARGO Engineering Industries designs and manufactures multicrop reaper machines and farm mechanization equipment built for the realities of Indian fields — engineered in Punjab, trusted across the country.",
+    "ARGO Engineering Industries is a Punjab-based manufacturer and exporter of high-class agriculture and rice sheller implements. From our works near NH-1 in Rajpura, Punjab, we build the ARGO Mini Reaper multicrop harvesting range and ARGO Rice Mill machines for farmers, custom-hiring operators and dealers across Punjab and India.",
   metaDescription:
-    "ARGO Engineering Industries manufactures multicrop reaper machines, tiller reapers, weeder reapers and paddy separators. Precision-built farm equipment, your partner in farming.",
+    "ARGO Engineering Industries — Punjab manufacturer & exporter of ARGO Mini Reaper multicrop harvesters and rice mill (rice sheller) machines. Based in Rajpura, Punjab, serving Ludhiana, Patiala, Amritsar, Jalandhar and all of Punjab. Your partner in farming.",
+  gstin: "03HXTPS2082F1Z2",
   stats: [
     { label: "Years Manufacturing", value: "10+" },
-    { label: "Dealers Nationwide", value: "150+" },
-    { label: "Units Delivered", value: "12,000+" },
-    { label: "Quality Assurance", value: "100%" },
+    { label: "Dealers Across Punjab & India", value: "150+" },
+    { label: "Machines Delivered", value: "12,000+" },
+    { label: "Crops Harvested", value: "15+" },
   ],
   contact: {
-    address: "Focal Point Industrial Area, Ludhiana, Punjab, India",
+    address:
+      "Near NH-1, Backside Naugajja Peer, Uksi Jattan Road, Vill. Pilkhani, Rajpura, Punjab 140401",
+    addressLocality: "Rajpura",
+    addressRegion: "Punjab",
+    postalCode: "140401",
     email: "info@argo-india.com",
-    phone: "+91 98765 43210",
-    whatsapp: "+919876543210",
+    phones: ["+91 98882 86101", "+91 98882 96101", "+91 87543 91194"],
+    phone: "+91 98882 86101",
+    whatsapp: "+919888286101",
     hours: "Mon – Sat, 9:00 AM – 6:30 PM IST",
+    geo: { lat: 30.4849, lng: 76.594 },
     mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425000!2d75.857!3d30.901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDU0JzAzLjYiTiA3NcKwNTEnMjUuMiJF!5e0!3m2!1sen!2sin!4v1000000000000",
+      "https://www.google.com/maps?q=Rajpura,Punjab,140401&output=embed",
   },
   social: {
     youtube: "https://youtube.com/@argoengineeringindustries",
     instagram: "https://instagram.com/argoengineeringindustries",
     facebook: "https://facebook.com/argoengineeringindustries",
   },
-  certifications: [
-    { name: "ISO 9001:2015", description: "Certified quality management system" },
-    { name: "BIS Compliant", description: "Meets Bureau of Indian Standards for agri-machinery" },
-    { name: "CE Marked Components", description: "Engine and drivetrain components CE-rated" },
+  // Trust signals (non-ISO): quality commitments the workshop stands behind.
+  qualityMarks: [
+    {
+      name: "GST Registered Manufacturer",
+      description: "GSTIN 03HXTPS2082F1Z2 — a registered Punjab manufacturing unit.",
+    },
+    {
+      name: "In-House Fabrication",
+      description: "Every reaper header is welded, assembled and field-tested at our Rajpura works.",
+    },
+    {
+      name: "Multicrop Field-Proven",
+      description: "Machines proven across paddy, wheat, soybean and mixed Punjab cropping.",
+    },
   ],
   productLines: [
     {
-      name: "Tiller Reaper",
-      description: "Engine-driven walk-behind reaper for paddy, wheat and multicrop harvesting.",
+      name: "ARGO Mini Reaper",
+      description:
+        "Compact multicrop reaper head for mini tillers and power weeders — clean, fast cutting of paddy, wheat and soybean.",
     },
     {
-      name: "Back Rotary Weeder Reaper",
-      description: "Combined weeding and reaping unit for row-crop fields.",
+      name: "Tiller Reaper (Self-Propelled)",
+      description:
+        "Engine-driven walk-behind reaper machine for single-operator harvesting of small and medium holdings.",
     },
     {
-      name: "Gravity Paddy Separator – 8 TPH",
-      description: "High-throughput stationary separator for post-harvest paddy cleaning.",
+      name: "Reaper Header & Attachments",
+      description:
+        "Standalone 2, 3 and 4-divider cutter-bar headers finished in red, blue, green or yellow, built to a common fit.",
     },
     {
-      name: "Weeder Reaper",
-      description: "Lightweight rotary weeder reaper for inter-row maintenance.",
-    },
-    {
-      name: "Cutter Cum Rack",
-      description: "Tractor-mounted cutting and racking attachment for fodder and multicrop lines.",
+      name: "ARGO Rice Mill Machine",
+      description:
+        "Compact rice sheller / rice mill delivering clean paddy-to-rice milling with efficient, low-maintenance operation.",
     },
   ],
 };

@@ -8,13 +8,13 @@ export function Certifications() {
     <section className="py-24">
       <div className="container-px">
         <Reveal className="mb-12 max-w-xl">
-          <span className="section-eyebrow">Certifications</span>
+          <span className="section-eyebrow">Quality &amp; Trust</span>
           <h2 className="mt-3 font-display text-4xl font-bold leading-tight text-charcoal">
-            Quality benchmarks we hold ourselves to.
+            Built and tested in Punjab, standing behind every machine.
           </h2>
         </Reveal>
         <RevealGroup className="grid grid-cols-1 gap-5 sm:grid-cols-3" stagger={0.12}>
-          {company.certifications.map((cert) => (
+          {company.qualityMarks.map((cert) => (
             <RevealItem
               key={cert.name}
               variants={fadeUp}

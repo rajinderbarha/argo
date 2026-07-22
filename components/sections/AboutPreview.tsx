@@ -13,9 +13,10 @@ export function AboutPreview() {
           <div className="absolute -left-4 -top-4 h-full w-full rounded-2xl border-2 border-forest/15" />
           <div className="relative aspect-[5/4] overflow-hidden rounded-2xl">
             <Image
-              src="/images/products/reaper-green-04.jpg"
-              alt="ARGO mini reaper header on the production floor"
+              src="/images/gallery/promo-green-tiller.webp"
+              alt="ARGO Mini Reaper self-propelled tiller reaper built at our Rajpura, Punjab works"
               fill
+              sizes="(min-width: 1024px) 45vw, 100vw"
               className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105"
             />
           </div>
@@ -26,17 +27,18 @@ export function AboutPreview() {
             A decade of building machines that survive the field, not just the showroom.
           </h2>
           <p className="mt-5 text-[15px] leading-relaxed text-charcoal/65">
-            ARGO Engineering Industries started with a single product line — a
-            walk-behind multicrop reaper — and grew into a manufacturer trusted
-            by custom hiring centres, dealers and individual farm owners across
-            Punjab and beyond. Every header that leaves our facility is built
-            on the same tolerances, whether it ships as a standalone unit or
-            assembled onto a complete machine.
+            ARGO Engineering Industries is a Punjab-based manufacturer and
+            exporter of high-class agriculture and rice sheller implements.
+            From our works near NH-1 in Rajpura, we build the ARGO Mini Reaper
+            multicrop harvesting range and ARGO Rice Mill machines, trusted by
+            custom-hiring centres, dealers and farm owners across Punjab and
+            beyond.
           </p>
           <p className="mt-4 text-[15px] leading-relaxed text-charcoal/65">
-            We design for the realities of Indian fields: standing water,
-            uneven bunds, mixed crop densities, and the need for a machine
-            that a single operator can service themselves mid-season.
+            We design for the realities of Punjab fields: standing water,
+            uneven bunds, mixed crop densities, and the need for a machine a
+            single operator can fit, run and service themselves through the
+            harvest season.
           </p>
           <Button asChild variant="outline" size="lg" className="mt-7">
             <Link href="/about">

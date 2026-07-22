@@ -18,9 +18,9 @@ const columns = [
   {
     title: "Products",
     links: [
-      { href: "/products/argo-mini-reaper-walk-behind", label: "Walk-Behind Reaper" },
-      { href: "/products/argo-multicrop-reaper-header", label: "Reaper Header" },
-      { href: "/products/argo-tractor-mounted-multicrop-reaper", label: "Tractor-Mounted Reaper" },
+      { href: "/products/argo-mini-reaper-3-divider", label: "Mini Reaper (3 Divider)" },
+      { href: "/products/argo-self-propelled-tiller-reaper", label: "Tiller Reaper" },
+      { href: "/products/argo-rice-mill-machine", label: "Rice Mill Machine" },
       { href: "/products", label: "Full Catalog" },
     ],
   },
@@ -105,9 +105,15 @@ export function Footer() {
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-forest-400" />
               {company.contact.address}
             </li>
-            <li className="flex items-center gap-2.5">
-              <Phone className="h-4 w-4 shrink-0 text-forest-400" />
-              {company.contact.phone}
+            <li className="flex items-start gap-2.5">
+              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-forest-400" />
+              <span className="flex flex-col gap-0.5">
+                {company.contact.phones.map((p) => (
+                  <a key={p} href={`tel:${p.replace(/[^0-9+]/g, "")}`} className="transition-colors hover:text-white">
+                    {p}
+                  </a>
+                ))}
+              </span>
             </li>
             <li className="flex items-center gap-2.5">
               <Mail className="h-4 w-4 shrink-0 text-forest-400" />

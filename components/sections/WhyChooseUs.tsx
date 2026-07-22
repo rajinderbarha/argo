@@ -6,7 +6,7 @@ const reasons = [
   {
     icon: ShieldCheck,
     title: "Premium Build Quality",
-    description: "Powder-coated steel chassis and hardened sickle assemblies tested before dispatch.",
+    description: "High-grade steel frames and hardened cutting blades, field-tested before dispatch.",
   },
   {
     icon: Truck,

@@ -3,10 +3,10 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { fadeUp } from "@/lib/animations";
 
 const industries = [
-  { icon: Tractor, name: "Individual Farm Owners", description: "Smallholder and mid-acreage farmers harvesting their own land." },
+  { icon: Tractor, name: "Individual Farm Owners", description: "Smallholder and mid-acreage Punjab farmers harvesting their own land." },
   { icon: Users, name: "Custom Hiring Centres", description: "Operators running fleets of reapers across multiple village clients." },
-  { icon: Building2, name: "Regional Dealers", description: "Distributors stocking complete units and spare headers." },
-  { icon: Warehouse, name: "Post-Harvest Processors", description: "Operations pairing reaping with paddy separation and storage." },
+  { icon: Building2, name: "Regional Dealers", description: "Distributors across Punjab stocking complete units and spare heads." },
+  { icon: Warehouse, name: "Rice Millers & Cooperatives", description: "Villages, cooperatives and small millers running ARGO rice mill machines." },
 ];
 
 export function IndustriesServed() {

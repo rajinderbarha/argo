@@ -12,19 +12,22 @@ export const metadata: Metadata = buildMetadata({
 });
 
 const items = [
-  { src: "/images/products/reaper-red-02.jpg", alt: "Red walk-behind reaper, front view", tag: "Walk-Behind" },
-  { src: "/images/products/reaper-blue-tractor-02.jpg", alt: "Blue tractor-mounted reaper", tag: "Tractor-Mounted" },
-  { src: "/images/products/reaper-yellow-01.jpg", alt: "Yellow reaper header on foam pad", tag: "Header" },
-  { src: "/images/products/reaper-green-01.jpg", alt: "Green reaper header on pavers", tag: "Header" },
-  { src: "/images/products/reaper-red-03.jpg", alt: "Red walk-behind reaper, side angle", tag: "Walk-Behind" },
-  { src: "/images/products/reaper-blue-01.jpg", alt: "Blue reaper header, front view", tag: "Header" },
-  { src: "/images/products/reaper-blue-tractor-03.jpg", alt: "Blue tractor-mounted reaper, side view", tag: "Tractor-Mounted" },
-  { src: "/images/products/reaper-green-04.jpg", alt: "Green reaper header, isometric", tag: "Header" },
-  { src: "/images/products/reaper-yellow-02.jpg", alt: "Yellow reaper header, isometric", tag: "Header" },
-  { src: "/images/products/reaper-blue-02.jpg", alt: "Blue reaper header, second angle", tag: "Header" },
-  { src: "/images/products/reaper-blue-tractor-01.jpg", alt: "Blue tractor-mounted reaper at dealer facility", tag: "Dealer Network" },
-  { src: "/images/products/reaper-green-02.jpg", alt: "Green reaper header, angled view", tag: "Header" },
-  { src: "/images/products/reaper-green-03.jpg", alt: "Green reaper header on foam pad", tag: "Header" },
+  { src: "/images/hero/hero-reaper-family.webp", alt: "ARGO Mini Reaper range in yellow, green and blue mounted on a power tiller in Punjab", tag: "Reaper Range" },
+  { src: "/images/products/mini-reaper-blue.webp", alt: "Blue ARGO self-propelled tiller reaper, front view", tag: "Tiller Reaper" },
+  { src: "/images/products/mini-reaper-red.webp", alt: "Red ARGO Mini Reaper machine with engine, front view", tag: "Tiller Reaper" },
+  { src: "/images/products/mini-reaper-green.webp", alt: "Green ARGO Mini Reaper self-propelled machine", tag: "Tiller Reaper" },
+  { src: "/images/products/reaper-head-red.webp", alt: "Red ARGO Mini Reaper 3-divider cutting head", tag: "Reaper Head" },
+  { src: "/images/products/reaper-head-yellow.webp", alt: "Yellow ARGO Mini Reaper cutting head", tag: "Reaper Head" },
+  { src: "/images/products/reaper-3s2c-green.webp", alt: "Green ARGO Mini Reaper 3-divider head studio shot", tag: "Reaper Head" },
+  { src: "/images/products/reaper-2s2c-yellow.webp", alt: "Yellow ARGO Mini Reaper 2-divider compact head", tag: "Reaper Head" },
+  { src: "/images/products/rice-mill-front.webp", alt: "ARGO Rice Mill machine (rice sheller), front view", tag: "Rice Mill" },
+  { src: "/images/products/rice-mill-angle.webp", alt: "ARGO Rice Mill machine, angled view with control panel", tag: "Rice Mill" },
+  { src: "/images/gallery/promo-red-farmer.webp", alt: "Punjab farmer with a red ARGO Mini Reaper in a paddy field", tag: "In the Field" },
+  { src: "/images/gallery/promo-blue-farmer.webp", alt: "Punjab farmer with a blue ARGO Mini Reaper machine", tag: "In the Field" },
+  { src: "/images/gallery/promo-red-tractor.webp", alt: "Red ARGO Mini Reaper mounted on a mini tractor in a field", tag: "In the Field" },
+  { src: "/images/gallery/banner-reaper-red.webp", alt: "ARGO Mini Reaper red — compact in size, powerful in performance", tag: "Reaper Range" },
+  { src: "/images/gallery/banner-reaper-green.webp", alt: "ARGO Mini Reaper green — 26+ tonnes of harvest capability", tag: "Reaper Range" },
+  { src: "/images/gallery/rice-mill-lifestyle.webp", alt: "ARGO Rice Mill with a sack of freshly milled rice", tag: "Rice Mill" },
 ];
 
 export default function GalleryPage() {

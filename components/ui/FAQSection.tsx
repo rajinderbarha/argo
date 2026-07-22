@@ -12,12 +12,16 @@ const faqs = [
     a: "The full range covers paddy, wheat, soybean and most multicrop row harvests. The cutter bar and guard finger spacing are tuned for the stalk densities typical of Punjab paddy and wheat fields.",
   },
   {
-    q: "Do you sell the cutter-bar header separately from a complete machine?",
-    a: "Yes. The ARGO Multicrop Reaper Header ships as a standalone unit for dealers, assemblers, and existing owners who need a replacement header without buying a full machine.",
+    q: "Which mini tillers and power weeders does the ARGO Mini Reaper fit?",
+    a: "The reaper heads are a universal fit for most 15–25 HP mini tillers and power weeders. Tell us the make and model you run and our team will confirm compatibility before you order.",
   },
   {
-    q: "What tractor horsepower does the tractor-mounted reaper need?",
-    a: "The tractor-mounted multicrop reaper is built for 16–35 HP mini and compact tractors, front-mounted via a height-adjustable 3-point linkage.",
+    q: "Do you sell the reaper head separately from a complete machine?",
+    a: "Yes. Our 2, 3 and 4-divider reaper heads ship as standalone units for dealers, assemblers, and existing owners who need a head without buying a full self-propelled machine.",
+  },
+  {
+    q: "Do you also make rice milling machines?",
+    a: "Yes — alongside the ARGO Mini Reaper range we manufacture the ARGO Rice Mill (rice sheller) machine for clean, efficient paddy-to-rice milling for villages, cooperatives and small commercial millers.",
   },
   {
     q: "What's the typical lead time on a bulk dealer order?",

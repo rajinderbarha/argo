@@ -10,16 +10,16 @@ import { fadeUp, slideLeft, slideRight, scaleIn } from "@/lib/animations";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "About Us",
+  title: "About Us | Punjab Agriculture & Rice Sheller Manufacturer",
   description:
-    "Learn about ARGO Engineering Industries — our manufacturing process, mission, and the decade we've spent building multicrop reaper machines for Indian agriculture.",
+    "ARGO Engineering Industries is a Punjab-based manufacturer and exporter of high-class agriculture and rice sheller implements, based in Rajpura and serving farmers across Punjab and India for over a decade.",
   path: "/about",
 });
 
 const factoryImages = [
-  "/images/products/reaper-green-04.jpg",
-  "/images/products/reaper-yellow-01.jpg",
-  "/images/products/reaper-blue-01.jpg",
+  { src: "/images/gallery/promo-red-head.webp", alt: "ARGO Mini Reaper cutting head fabricated at our Rajpura, Punjab works" },
+  { src: "/images/products/rice-mill-angle.webp", alt: "ARGO Rice Mill machine assembled and tested in-house" },
+  { src: "/images/gallery/promo-green-tiller.webp", alt: "ARGO self-propelled tiller reaper ready for dispatch" },
 ];
 
 export default function AboutPage() {
@@ -44,14 +44,14 @@ export default function AboutPage() {
               Founded {company.founded}, built on one product line
             </h2>
             <p className="mt-5 text-[15px] leading-relaxed text-charcoal/65">
-              ARGO Engineering Industries began with a single walk-behind
-              multicrop reaper, designed for the kind of smallholder paddy
-              field where a full combine doesn't make economic sense. Over
-              the following decade, the same engineering discipline that went
-              into that first cutter bar expanded into a full reaper platform
-              — standalone headers, tractor-mounted units, and the
-              accompanying post-harvest equipment that custom hiring centres
-              actually ask for.
+              ARGO Engineering Industries began with a single multicrop reaper
+              head, designed for the smallholder paddy and wheat fields of
+              Punjab where a full combine doesn't make economic sense. Over the
+              following decade, the same engineering discipline that went into
+              that first cutter bar expanded into a full range — 2, 3 and
+              4-divider reaper heads, self-propelled tiller reapers, and the
+              ARGO Rice Mill machines that villages and small millers across
+              Punjab actually ask for.
             </p>
             <p className="mt-4 text-[15px] leading-relaxed text-charcoal/65">
               We're a manufacturer first. Every product decision starts on
@@ -99,12 +99,13 @@ export default function AboutPage() {
             </h2>
           </Reveal>
           <RevealGroup className="grid grid-cols-1 gap-5 sm:grid-cols-3" stagger={0.12}>
-            {factoryImages.map((src, i) => (
-              <RevealItem key={src} variants={scaleIn} className="group relative aspect-[4/3] overflow-hidden rounded-xl">
+            {factoryImages.map((img) => (
+              <RevealItem key={img.src} variants={scaleIn} className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-charcoal-800">
                 <Image
-                  src={src}
-                  alt={`ARGO factory image ${i + 1}`}
+                  src={img.src}
+                  alt={img.alt}
                   fill
+                  sizes="(min-width: 640px) 33vw, 100vw"
                   className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110"
                 />
               </RevealItem>

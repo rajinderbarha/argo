@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { MapPin, Mail, Phone, Clock } from "lucide-react";
+import { MapPin, Mail, Phone, Clock, FileText } from "lucide-react";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { ContactForm } from "@/components/ui/ContactForm";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
@@ -8,9 +8,9 @@ import { company } from "@/data/company";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contact Us",
+  title: "Contact Us | ARGO Engineering Industries, Rajpura, Punjab",
   description:
-    "Get in touch with ARGO Engineering Industries — factory address, phone, email, and working hours.",
+    "Contact ARGO Engineering Industries in Rajpura, Punjab — factory address near NH-1, phone numbers, email and working hours. Punjab manufacturer of Mini Reaper and rice mill machines.",
   path: "/contact",
 });
 
@@ -38,7 +38,13 @@ export default function ContactPage() {
               <Phone className="mt-0.5 h-5 w-5 shrink-0 text-forest" />
               <div>
                 <p className="text-sm font-semibold text-charcoal">Phone</p>
-                <p className="mt-1 text-sm text-charcoal/60">{company.contact.phone}</p>
+                <p className="mt-1 flex flex-col text-sm text-charcoal/60">
+                  {company.contact.phones.map((p) => (
+                    <a key={p} href={`tel:${p.replace(/[^0-9+]/g, "")}`} className="transition-colors hover:text-forest">
+                      {p}
+                    </a>
+                  ))}
+                </p>
               </div>
             </RevealItem>
             <RevealItem variants={slideRight} className="card-glow flex items-start gap-4 rounded-xl border border-charcoal/10 bg-white p-6 transition-transform duration-300 hover:-translate-y-1">
@@ -53,6 +59,14 @@ export default function ContactPage() {
               <div>
                 <p className="text-sm font-semibold text-charcoal">Working hours</p>
                 <p className="mt-1 text-sm text-charcoal/60">{company.contact.hours}</p>
+              </div>
+            </RevealItem>
+
+            <RevealItem variants={slideRight} className="card-glow flex items-start gap-4 rounded-xl border border-charcoal/10 bg-white p-6 transition-transform duration-300 hover:-translate-y-1">
+              <FileText className="mt-0.5 h-5 w-5 shrink-0 text-forest" />
+              <div>
+                <p className="text-sm font-semibold text-charcoal">GSTIN</p>
+                <p className="mt-1 font-mono text-sm text-charcoal/60">{company.gstin}</p>
               </div>
             </RevealItem>
 

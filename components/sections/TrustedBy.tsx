@@ -2,12 +2,12 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { fadeUp, fadeIn } from "@/lib/animations";
 
 const badges = [
-  "BIS Compliant",
-  "ISO 9001:2015",
+  "Made in Punjab",
+  "GST Registered Manufacturer",
   "150+ Dealers",
-  "12,000+ Units Delivered",
+  "12,000+ Machines Delivered",
   "Pan-India Service Network",
-  "CE-Rated Components",
+  "Multicrop Field-Proven",
 ];
 
 export function TrustedBy() {

@@ -6,9 +6,9 @@ import { products } from "@/data/products";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Product Catalog",
+  title: "Product Catalog — Mini Reapers & Rice Mill Machines | Punjab",
   description:
-    "Browse the full ARGO Engineering Industries product catalog — walk-behind reapers, multicrop reaper headers, and tractor-mounted reaper units.",
+    "Browse ARGO Engineering Industries' catalog — ARGO Mini Reaper heads (2, 3 & 4 divider), self-propelled tiller reapers and rice mill (rice sheller) machines. Manufactured in Rajpura, Punjab.",
   path: "/products",
 });
 

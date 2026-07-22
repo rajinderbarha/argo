@@ -7,9 +7,9 @@ export const testimonials: Testimonial[] = [
     role: "Farm Owner",
     location: "Moga, Punjab",
     quote:
-      "We switched to the ARGO walk-behind reaper for our wheat harvest two seasons ago. It starts every morning without a fuss and the cutter bar barely jams, even in lodged crop.",
+      "We switched to the ARGO Mini Reaper for our wheat harvest two seasons ago. It starts every morning without a fuss and the blades barely jam, even in lodged crop.",
     rating: 5,
-    product: "ARGO Mini Reaper — Walk-Behind",
+    product: "ARGO Mini Reaper — 3 Divider",
   },
   {
     id: "t2",
@@ -19,17 +19,17 @@ export const testimonials: Testimonial[] = [
     quote:
       "We run four ARGO units across the paddy season for smallholder clients. Spare headers are easy to source and the local dealer turns around service requests fast.",
     rating: 5,
-    product: "ARGO Multicrop Reaper Header",
+    product: "ARGO Mini Reaper — 3 Divider",
   },
   {
     id: "t3",
-    name: "Harvinder Mechanised Farms",
-    role: "Operations Manager",
+    name: "Harvinder Rice Mill",
+    role: "Rice Miller",
     location: "Bathinda, Punjab",
     quote:
-      "The tractor-mounted reaper paired with our compact tractor covers our acreage in half the passes we needed with hired manual labour.",
+      "The ARGO Rice Mill lets us de-husk and whiten paddy right here in the village. Clean output, low power draw, and hardly any downtime through the season.",
     rating: 4,
-    product: "ARGO Tractor-Mounted Multicrop Reaper",
+    product: "ARGO Rice Mill Machine",
   },
   {
     id: "t4",
@@ -39,7 +39,7 @@ export const testimonials: Testimonial[] = [
     quote:
       "Build quality is the real difference — the chassis hasn't needed a single weld repair after three harvests.",
     rating: 5,
-    product: "ARGO Mini Reaper — Walk-Behind",
+    product: "ARGO Mini Reaper — 3 Divider",
   },
   {
     id: "t5",
@@ -49,7 +49,7 @@ export const testimonials: Testimonial[] = [
     quote:
       "ARGO ships headers in the colour variants our customers actually ask for, and the units arrive pre-tested. That cuts our pre-sale inspection time significantly.",
     rating: 5,
-    product: "ARGO Multicrop Reaper Header",
+    product: "ARGO Mini Reaper — 2 Divider",
   },
   {
     id: "t6",
@@ -59,6 +59,6 @@ export const testimonials: Testimonial[] = [
     quote:
       "Support over WhatsApp is genuinely responsive — we got a spare part dispatched within a day during peak harvest.",
     rating: 4,
-    product: "ARGO Mini Reaper — Walk-Behind",
+    product: "ARGO Mini Reaper — 3 Divider",
   },
 ];

@@ -25,10 +25,11 @@ export async function generateMetadata({
   const product = products.find((p) => p.slug === slug);
   if (!product) return buildMetadata({ title: "Product not found", description: "Product not found." });
   return buildMetadata({
-    title: product.name,
-    description: product.shortDescription,
+    title: `${product.name} — ${product.category} | Punjab`,
+    description: `${product.shortDescription} Manufactured by ARGO Engineering Industries, Rajpura, Punjab.`,
     path: `/products/${product.slug}`,
     image: product.image,
+    keywords: [product.name, product.category, ...(product.colors ?? [])],
   });
 }
 
@@ -43,13 +44,44 @@ export default async function ProductDetailPage({
 
   const related = products.filter((p) => p.slug !== product.slug).slice(0, 2);
 
+  const SITE_URL = "https://www.argo-india.com";
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
     description: product.shortDescription,
     category: product.category,
-    brand: { "@type": "Brand", name: "ARGO Engineering Industries" },
+    image: product.gallery.map((g) => `${SITE_URL}${g}`),
+    sku: product.slug,
+    ...(product.colors ? { color: product.colors.join(", ") } : {}),
+    brand: { "@type": "Brand", name: "ARGO" },
+    manufacturer: {
+      "@type": "Organization",
+      name: "ARGO Engineering Industries",
+      "@id": `${SITE_URL}/#organization`,
+    },
+    additionalProperty: product.specs.map((s) => ({
+      "@type": "PropertyValue",
+      name: s.label,
+      value: s.value,
+    })),
+    offers: {
+      "@type": "Offer",
+      url: `${SITE_URL}/products/${product.slug}`,
+      priceCurrency: "INR",
+      availability: "https://schema.org/InStock",
+      areaServed: { "@type": "State", name: "Punjab" },
+      seller: { "@type": "Organization", name: "ARGO Engineering Industries" },
+    },
+  };
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Products", item: `${SITE_URL}/products` },
+      { "@type": "ListItem", position: 3, name: product.name, item: `${SITE_URL}/products/${product.slug}` },
+    ],
   };
 
   return (
@@ -57,6 +89,10 @@ export default async function ProductDetailPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       <div className="container-px">
         <Breadcrumbs

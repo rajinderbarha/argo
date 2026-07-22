@@ -20,6 +20,7 @@ const items = [
   { src: "/images/products/reaper-head-yellow.webp", alt: "Yellow ARGO Mini Reaper cutting head", tag: "Reaper Head" },
   { src: "/images/products/reaper-3s2c-green.webp", alt: "Green ARGO Mini Reaper 3-divider head studio shot", tag: "Reaper Head" },
   { src: "/images/products/reaper-2s2c-yellow.webp", alt: "Yellow ARGO Mini Reaper 2-divider compact head", tag: "Reaper Head" },
+  { src: "/images/gallery/promo-red-head.webp", alt: "Red ARGO Mini Reaper cutting head, close-up promo", tag: "Reaper Head" },
   { src: "/images/products/rice-mill-front.webp", alt: "ARGO Rice Mill machine (rice sheller), front view", tag: "Rice Mill" },
   { src: "/images/products/rice-mill-angle.webp", alt: "ARGO Rice Mill machine, angled view with control panel", tag: "Rice Mill" },
   { src: "/images/gallery/promo-red-farmer.webp", alt: "Punjab farmer with a red ARGO Mini Reaper in a paddy field", tag: "In the Field" },

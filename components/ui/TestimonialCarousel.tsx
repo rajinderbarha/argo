@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Quote, Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { Testimonial } from "@/types";
 import { useIsReducedMotion } from "@/lib/useMotionVariants";
+import { cn, getInitials, avatarGradient } from "@/lib/utils";
 
 /**
  * Auto-advancing, center-stage testimonial carousel. Pauses on hover/focus,
@@ -41,7 +42,7 @@ export function TestimonialCarousel({ testimonials }: { testimonials: Testimonia
       onFocus={() => setPaused(true)}
       onBlur={() => setPaused(false)}
     >
-      <div className="relative mx-auto min-h-[280px] max-w-2xl sm:min-h-[240px]">
+      <div className="relative mx-auto min-h-[340px] max-w-2xl sm:min-h-[300px]">
         <AnimatePresence mode="wait">
           <motion.div
             key={active.id}
@@ -58,25 +59,58 @@ export function TestimonialCarousel({ testimonials }: { testimonials: Testimonia
               className="flex h-full flex-col items-center gap-5 rounded-2xl border border-charcoal/10 bg-white p-8 text-center shadow-[0_24px_64px_-32px_rgba(17,24,39,0.25)] sm:p-10"
               style={{ willChange: "transform" }}
             >
-              <Quote className="h-7 w-7 text-forest/30" />
-              <p className="max-w-xl text-[17px] leading-relaxed text-charcoal/80">
-                "{active.quote}"
+              <Quote className="h-7 w-7 shrink-0 text-forest/30" aria-hidden="true" />
+              <p
+                lang={active.lang === "pa" ? "pa" : "en"}
+                className={cn(
+                  "max-w-xl text-[17px] leading-relaxed text-charcoal/80",
+                  active.lang === "pa" && "font-gurmukhi leading-[1.95]"
+                )}
+              >
+                {active.lang === "pa" ? "" : "“"}
+                {active.quote}
+                {active.lang === "pa" ? "" : "”"}
               </p>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-0.5" aria-label={`${active.rating} out of 5 stars`}>
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
                     key={i}
-                    className={`h-3.5 w-3.5 ${
+                    className={cn(
+                      "h-4 w-4",
                       i < active.rating ? "fill-hazard text-hazard" : "fill-mist text-mist"
-                    }`}
+                    )}
+                    aria-hidden="true"
                   />
                 ))}
               </div>
-              <div>
-                <p className="font-display text-sm font-semibold text-charcoal">{active.name}</p>
-                <p className="text-xs text-charcoal/50">
-                  {active.role} · {active.location}
-                </p>
+              <div className="mt-auto flex items-center gap-3">
+                <span
+                  className={cn(
+                    "flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br font-display text-base font-bold text-white shadow-sm",
+                    avatarGradient(active.id),
+                    active.lang === "pa" && "font-gurmukhi"
+                  )}
+                  aria-hidden="true"
+                >
+                  {getInitials(active.name)}
+                </span>
+                <div className="text-left">
+                  <p
+                    lang={active.lang === "pa" ? "pa" : "en"}
+                    className={cn(
+                      "font-display text-sm font-semibold text-charcoal",
+                      active.lang === "pa" && "font-gurmukhi"
+                    )}
+                  >
+                    {active.name}
+                  </p>
+                  <p
+                    lang={active.lang === "pa" ? "pa" : "en"}
+                    className={cn("text-xs text-charcoal/50", active.lang === "pa" && "font-gurmukhi")}
+                  >
+                    {active.role} · {active.location}
+                  </p>
+                </div>
               </div>
             </motion.div>
           </motion.div>

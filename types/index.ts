@@ -22,6 +22,8 @@ export type Testimonial = {
   quote: string;
   rating: number;
   product?: string;
+  /** Script/language of the quote — "pa" = Punjabi (Gurmukhi), "en" = English. */
+  lang?: "en" | "pa";
 };
 
 export type BlogPost = {

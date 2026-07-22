@@ -17,9 +17,9 @@ export const metadata: Metadata = buildMetadata({
 });
 
 const factoryImages = [
-  { src: "/images/gallery/promo-red-head.webp", alt: "ARGO Mini Reaper cutting head fabricated at our Rajpura, Punjab works" },
-  { src: "/images/products/rice-mill-angle.webp", alt: "ARGO Rice Mill machine assembled and tested in-house" },
-  { src: "/images/gallery/promo-green-tiller.webp", alt: "ARGO self-propelled tiller reaper ready for dispatch" },
+  { src: "/images/products/reaper-head-red.webp", alt: "ARGO Mini Reaper cutting head fabricated at our Rajpura, Punjab works" },
+  { src: "/images/products/rice-mill-front.webp", alt: "ARGO Rice Mill machine assembled and tested in-house" },
+  { src: "/images/products/mini-reaper-blue.webp", alt: "ARGO self-propelled tiller reaper ready for dispatch" },
 ];
 
 export default function AboutPage() {
@@ -106,7 +106,7 @@ export default function AboutPage() {
                   alt={img.alt}
                   fill
                   sizes="(min-width: 640px) 33vw, 100vw"
-                  className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110"
+                  className="object-contain p-4 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
                 />
               </RevealItem>
             ))}

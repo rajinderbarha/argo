@@ -10,14 +10,15 @@ export function AboutPreview() {
     <section className="py-24">
       <div className="container-px grid items-center gap-14 lg:grid-cols-2">
         <Reveal variants={scaleIn} className="relative">
-          <div className="absolute -left-4 -top-4 h-full w-full rounded-2xl border-2 border-forest/15" />
-          <div className="relative aspect-[5/4] overflow-hidden rounded-2xl">
+          <div className="absolute -left-4 -top-4 hidden h-full w-full rounded-2xl border-2 border-forest/15 sm:block" />
+          <div className="relative overflow-hidden rounded-2xl border border-charcoal/10 bg-gradient-to-br from-mist/60 to-white">
             <Image
               src="/images/gallery/promo-green-tiller.webp"
               alt="ARGO Mini Reaper self-propelled tiller reaper built at our Rajpura, Punjab works"
-              fill
+              width={723}
+              height={964}
               sizes="(min-width: 1024px) 45vw, 100vw"
-              className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105"
+              className="mx-auto h-auto w-full max-w-[520px] object-contain"
             />
           </div>
         </Reveal>

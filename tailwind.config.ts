@@ -36,6 +36,7 @@ const config: Config = {
         display: ["var(--font-display)", "sans-serif"],
         body: ["var(--font-body)", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
+        gurmukhi: ["var(--font-gurmukhi)", "var(--font-body)", "sans-serif"],
       },
       backgroundImage: {
         "hazard-stripe":

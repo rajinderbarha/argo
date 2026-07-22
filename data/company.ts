@@ -26,8 +26,10 @@ export const company = {
     whatsapp: "+919888286101",
     hours: "Mon – Sat, 9:00 AM – 6:30 PM IST",
     geo: { lat: 30.4849, lng: 76.594 },
+    // Exact client-provided Google Maps place (resolved from the shared short link).
     mapEmbed:
-      "https://www.google.com/maps?q=Rajpura,Punjab,140401&output=embed",
+      "https://maps.google.com/maps?q=Argo%20Engineering%20Industries,%20Near%20NH-1%20Village%20Pilkhani,%20Rajpura,%20Punjab%20140402&output=embed",
+    mapLink: "https://maps.app.goo.gl/EdiWz6jtdBB28suP7",
   },
   social: {
     youtube: "https://youtube.com/@argoengineeringindustries",

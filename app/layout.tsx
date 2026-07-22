@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Space_Grotesk, Inter, IBM_Plex_Mono } from "next/font/google";
+import { Space_Grotesk, Inter, IBM_Plex_Mono, Noto_Sans_Gurmukhi } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingActions } from "@/components/ui/FloatingActions";
@@ -18,6 +18,11 @@ const mono = IBM_Plex_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
   weight: ["400", "500"],
+});
+const gurmukhi = Noto_Sans_Gurmukhi({
+  subsets: ["gurmukhi"],
+  variable: "--font-gurmukhi",
+  weight: ["400", "500", "600"],
 });
 
 const SITE_URL = "https://www.argo-india.com";
@@ -96,7 +101,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html lang="en-IN" className={`${display.variable} ${body.variable} ${mono.variable}`}>
+    <html lang="en-IN" className={`${display.variable} ${body.variable} ${mono.variable} ${gurmukhi.variable}`}>
       <body>
         <script
           type="application/ld+json"

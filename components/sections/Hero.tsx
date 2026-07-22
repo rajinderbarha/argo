@@ -13,6 +13,8 @@ import { useIsReducedMotion } from "@/lib/useMotionVariants";
 type Slide = {
   image: string;
   alt: string;
+  /** object-position for the background image, tuned per photo to avoid awkward crops. */
+  position: string;
   eyebrow: string;
   title: string;
   highlight: string;
@@ -24,6 +26,7 @@ const slides: Slide[] = [
   {
     image: "/images/hero/hero-blue-field.webp",
     alt: "ARGO Mini Reaper harvesting a golden paddy field at sunrise in Punjab",
+    position: "70% center",
     eyebrow: "Your Partner in Farming",
     title: "Built to cut clean through",
     highlight: "every Punjab harvest.",
@@ -31,31 +34,24 @@ const slides: Slide[] = [
     cta: { label: "Explore products", href: "/products" },
   },
   {
+    image: "/images/gallery/rice-mill-lifestyle.webp",
+    alt: "ARGO Rice Mill machine beside a sack of freshly milled rice in a paddy field",
+    position: "62% center",
+    eyebrow: "Rice Sheller Implements",
+    title: "Smart rice milling,",
+    highlight: "purity in every grain.",
+    text: "The ARGO Rice Mill machine delivers efficient, low-maintenance paddy-to-rice milling for villages, cooperatives and small commercial millers across Punjab.",
+    cta: { label: "Explore rice milling", href: "/products/argo-rice-mill-machine" },
+  },
+  {
     image: "/images/hero/hero-reaper-family.webp",
     alt: "ARGO Mini Reaper range in yellow, green and blue mounted on a power tiller",
-    eyebrow: "One machine, every crop",
+    position: "center 62%",
+    eyebrow: "One Machine, Every Crop",
     title: "The ARGO Mini Reaper range,",
     highlight: "compact yet powerful.",
     text: "Fits most 15–25 HP mini tillers and power weeders. Strong performance, durable build, fuel efficient and low maintenance — in red, blue, green and yellow.",
     cta: { label: "See the reaper range", href: "/products" },
-  },
-  {
-    image: "/images/hero/hero-green-field.webp",
-    alt: "Green ARGO Mini Reaper cutting head working in a standing crop field",
-    eyebrow: "Compact in size, powerful in performance",
-    title: "Precision cutting for",
-    highlight: "small & medium farms.",
-    text: "Sharp hardened blades and a high-strength steel frame lay a clean, uniform swath with minimal crop loss, season after season.",
-    cta: { label: "View specifications", href: "/products/argo-mini-reaper-3-divider" },
-  },
-  {
-    image: "/images/gallery/rice-mill-lifestyle.webp",
-    alt: "ARGO Rice Mill machine with a sack of freshly milled rice",
-    eyebrow: "Rice sheller implements",
-    title: "Smart rice milling,",
-    highlight: "purity in every grain.",
-    text: "The ARGO Rice Mill Machine delivers efficient, low-maintenance paddy-to-rice milling for villages, cooperatives and small commercial millers.",
-    cta: { label: "Explore rice milling", href: "/products/argo-rice-mill-machine" },
   },
 ];
 
@@ -110,12 +106,14 @@ export function Hero() {
               priority={index === 0}
               sizes="100vw"
               className="object-cover"
+              style={{ objectPosition: active.position }}
             />
           </motion.div>
         </AnimatePresence>
-        {/* Overlays for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/60 to-charcoal/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent" />
+        {/* Overlays for text readability: stronger on the left where text sits,
+            and a fuller wash on mobile where the image fills the whole screen. */}
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/70 to-charcoal/25 sm:from-charcoal/90 sm:via-charcoal/55 sm:to-charcoal/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-charcoal/10 sm:via-charcoal/25 sm:to-transparent" />
       </div>
 
       {/* Content */}

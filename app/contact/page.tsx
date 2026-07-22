@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { MapPin, Mail, Phone, Clock, FileText } from "lucide-react";
+import { MapPin, Mail, Phone, Clock, FileText, Navigation } from "lucide-react";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { ContactForm } from "@/components/ui/ContactForm";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
@@ -77,8 +77,18 @@ export default function ContactPage() {
                 height="280"
                 style={{ border: 0 }}
                 loading="lazy"
-                title="ARGO Engineering Industries location map"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="ARGO Engineering Industries location on Google Maps — Near NH-1, Pilkhani, Rajpura, Punjab"
               />
+              <a
+                href={company.contact.mapLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 border-t border-charcoal/10 bg-white px-4 py-3.5 text-sm font-semibold text-forest transition-colors hover:bg-forest hover:text-white"
+              >
+                <Navigation className="h-4 w-4" />
+                Get directions on Google Maps
+              </a>
             </RevealItem>
           </RevealGroup>
 

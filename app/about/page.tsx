@@ -100,7 +100,7 @@ export default function AboutPage() {
           </Reveal>
           <RevealGroup className="grid grid-cols-1 gap-5 sm:grid-cols-3" stagger={0.12}>
             {factoryImages.map((img) => (
-              <RevealItem key={img.src} variants={scaleIn} className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-charcoal-800">
+              <RevealItem key={img.src} variants={scaleIn} className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-charcoal/10 bg-gradient-to-br from-mist/60 to-white">
                 <Image
                   src={img.src}
                   alt={img.alt}

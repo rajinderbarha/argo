@@ -48,15 +48,15 @@ export function ProductCard({ product }: { product: Product }) {
           willChange: "transform",
         }}
       >
-        <div className="relative aspect-[4/3] w-full overflow-hidden bg-charcoal-800">
+        <div className="relative aspect-[4/3] w-full overflow-hidden bg-gradient-to-br from-mist/60 to-white">
           <Image
             src={product.image}
             alt={product.name}
             fill
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-            className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110"
+            className="object-contain p-4 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/10 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/5 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
           <div className="absolute left-3 top-3">
             <Badge>{product.category}</Badge>
           </div>

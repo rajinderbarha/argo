@@ -12,10 +12,13 @@ export const products: Product[] = [
     image: "/images/products/reaper-head-red.webp",
     gallery: [
       "/images/products/reaper-head-red.webp",
-      "/images/products/reaper-head-red-side.webp",
-      "/images/products/reaper-head-yellow.webp",
-      "/images/products/reaper-3s2c-green.webp",
+      "/images/gallery/promo-red-head.webp",
       "/images/gallery/reaper-head-specs.webp",
+      "/images/gallery/banner-reaper-red.webp",
+      "/images/products/reaper-head-red-side.webp",
+      "/images/gallery/promo-red-tractor.webp",
+      "/images/gallery/promo-red-farmer.webp",
+      "/images/products/reaper-3s2c-green.webp",
     ],
     specs: [
       { label: "Model", value: "3S2C — 3 Divider" },
@@ -51,8 +54,8 @@ export const products: Product[] = [
     image: "/images/products/reaper-2s2c-yellow.webp",
     gallery: [
       "/images/products/reaper-2s2c-yellow.webp",
-      "/images/products/reaper-head-yellow.webp",
       "/images/gallery/banner-reaper-yellow.webp",
+      "/images/products/reaper-head-yellow.webp",
     ],
     specs: [
       { label: "Model", value: "2S2C — 2 Divider" },
@@ -87,11 +90,15 @@ export const products: Product[] = [
     image: "/images/products/mini-reaper-blue.webp",
     gallery: [
       "/images/products/mini-reaper-blue.webp",
-      "/images/products/mini-reaper-blue-2.webp",
+      "/images/gallery/promo-blue-farmer.webp",
+      "/images/hero/hero-blue-field.webp",
       "/images/products/mini-reaper-green.webp",
+      "/images/gallery/field-reaper-green.webp",
+      "/images/gallery/banner-reaper-green.webp",
       "/images/products/mini-reaper-red.webp",
       "/images/products/reaper-swc-4s2c-blue.webp",
       "/images/products/tiller-reaper-4s2c-green.webp",
+      "/images/products/mini-reaper-blue-2.webp",
     ],
     specs: [
       { label: "Model", value: "4S2C — 4 Divider, self-propelled" },
@@ -128,8 +135,10 @@ export const products: Product[] = [
     gallery: [
       "/images/products/rice-mill-front.webp",
       "/images/products/rice-mill-angle.webp",
-      "/images/gallery/rice-mill-lifestyle.webp",
+      "/images/gallery/rice-mill-solutions.webp",
+      "/images/gallery/rice-mill-brand.webp",
       "/images/gallery/banner-rice-mill.webp",
+      "/images/gallery/rice-mill-lifestyle.webp",
     ],
     specs: [
       { label: "Type", value: "Compact rice mill / rice sheller" },

@@ -28,7 +28,7 @@ function GalleryTile({
       variants={variants}
       transition={{ delay: (index % 3) * 0.08 }}
       aria-label={`View image: ${item.alt}`}
-      className="group relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-charcoal/10 bg-charcoal-800 transition-[box-shadow,transform,border-color] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 hover:border-forest/40 hover:shadow-[0_28px_56px_-32px_rgba(17,24,39,0.45)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest"
+      className="group relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-charcoal/10 bg-gradient-to-br from-mist/60 to-white transition-[box-shadow,transform,border-color] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 hover:border-forest/30 hover:shadow-[0_28px_56px_-32px_rgba(17,24,39,0.3)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest"
       style={{ willChange: "transform, opacity" }}
     >
       <Image

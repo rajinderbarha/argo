@@ -24,7 +24,7 @@ export function ProductGallery({
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-charcoal/10 bg-charcoal-800">
+      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-charcoal/10 bg-gradient-to-br from-mist/60 to-white">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={active}
@@ -57,10 +57,10 @@ export function ProductGallery({
               whileTap={{ scale: 0.97 }}
               transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
               className={cn(
-                "relative h-20 w-24 shrink-0 overflow-hidden rounded-lg border-2 transition-colors duration-300",
+                "relative h-20 w-24 shrink-0 overflow-hidden rounded-lg border-2 bg-gradient-to-br from-mist/60 to-white transition-colors duration-300",
                 active === img
                   ? "border-forest"
-                  : "border-transparent opacity-70 hover:opacity-100"
+                  : "border-charcoal/10 opacity-80 hover:opacity-100"
               )}
               style={{ willChange: "transform" }}
             >

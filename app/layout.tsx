@@ -25,11 +25,11 @@ const gurmukhi = Noto_Sans_Gurmukhi({
   weight: ["400", "500", "600"],
 });
 
-const SITE_URL = "https://www.argo-india.com";
+const SITE_URL = "https://www.argoengg.in";
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: `${company.name} — Mini Reaper & Rice Mill Manufacturer in Punjab`,
+    title: `${company.name} — Reaper Head & Rice Sheller Manufacturer in Punjab`,
     description: company.metaDescription,
   }),
   metadataBase: new URL(SITE_URL),

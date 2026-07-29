@@ -15,9 +15,9 @@ import { cn } from "@/lib/utils";
  * No dropdowns, no search — one tap to browse.
  */
 const CATEGORY_ICONS: Record<string, LucideIcon> = {
-  "Mini Reaper Heads": Scissors,
-  "Self-Propelled Reapers": Tractor,
-  "Rice Milling Machines": Factory,
+  "Weeder & Tiller Reaper Head Attachments": Scissors,
+  "Tractor Mounted Reaper Head Attachment": Tractor,
+  "Rice Sheller Machines": Factory,
 };
 
 function ProductCard({ product }: { product: Product }) {

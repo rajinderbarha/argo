@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "Do you also make rice milling machines?",
-    a: "Yes — alongside the ARGO Mini Reaper range we manufacture the ARGO Rice Mill (rice sheller) machine for clean, efficient paddy-to-rice milling for villages, cooperatives and small commercial millers.",
+    a: "Yes — alongside our reaper head attachments we manufacture the ARGO Gravity Paddy Separator (Model GPS-8TPH), a rice sheller machine for clean, high-capacity separation of paddy from brown rice for rice shellers, mills and cooperatives.",
   },
   {
     q: "What's the typical lead time on a bulk dealer order?",

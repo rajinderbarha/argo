@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { products } from "@/data/products";
 
-const BASE_URL = "https://www.argo-india.com";
+const BASE_URL = "https://www.argoengg.in";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [

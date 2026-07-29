@@ -34,7 +34,7 @@ export function ProcessSection() {
     <section className="bg-mist/40 py-24">
       <div className="container-px">
         <Reveal className="mb-14 max-w-xl">
-          <span className="section-eyebrow">From mill to field</span>
+          <span className="section-eyebrow">From factory to field</span>
           <h2 className="mt-3 font-display text-4xl font-bold leading-tight text-charcoal">
             Five stages, the same on every unit we ship.
           </h2>

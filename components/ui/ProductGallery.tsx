@@ -47,24 +47,25 @@ export function ProductGallery({
         </AnimatePresence>
       </div>
       {images.length > 1 && (
-        <div className="flex gap-3">
-          {images.map((img) => (
+        <div className="grid grid-cols-4 gap-3 sm:grid-cols-5">
+          {images.map((img, i) => (
             <motion.button
               key={img}
               onClick={() => selectImage(img)}
-              aria-label={`Show image ${img}`}
+              aria-label={`Show image ${i + 1} of ${images.length}`}
+              aria-pressed={active === img}
               whileHover={{ y: -3, scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
               className={cn(
-                "relative h-20 w-24 shrink-0 overflow-hidden rounded-lg border-2 bg-gradient-to-br from-mist/60 to-white transition-colors duration-300",
+                "relative aspect-[5/4] w-full overflow-hidden rounded-lg border-2 bg-gradient-to-br from-mist/60 to-white transition-colors duration-300",
                 active === img
                   ? "border-forest"
                   : "border-charcoal/10 opacity-80 hover:opacity-100"
               )}
               style={{ willChange: "transform" }}
             >
-              <Image src={img} alt="" fill sizes="96px" className="object-cover" />
+              <Image src={img} alt="" fill sizes="(min-width: 640px) 120px, 90px" className="object-contain p-1" />
             </motion.button>
           ))}
         </div>

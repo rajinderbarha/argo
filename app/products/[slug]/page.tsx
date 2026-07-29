@@ -44,7 +44,7 @@ export default async function ProductDetailPage({
 
   const related = products.filter((p) => p.slug !== product.slug).slice(0, 2);
 
-  const SITE_URL = "https://www.argo-india.com";
+  const SITE_URL = "https://www.argoengg.in";
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",

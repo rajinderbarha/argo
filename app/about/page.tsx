@@ -18,7 +18,7 @@ export const metadata: Metadata = buildMetadata({
 
 const factoryImages = [
   { src: "/images/products/reaper-head-red.webp", alt: "ARGO Mini Reaper cutting head fabricated at our Rajpura, Punjab works" },
-  { src: "/images/products/rice-mill-front.webp", alt: "ARGO Rice Mill machine assembled and tested in-house" },
+  { src: "/images/products/rice-mill-front.webp", alt: "ARGO Gravity Paddy Separator assembled and tested in-house" },
   { src: "/images/products/mini-reaper-blue.webp", alt: "ARGO self-propelled tiller reaper ready for dispatch" },
 ];
 
@@ -49,9 +49,9 @@ export default function AboutPage() {
               Punjab where a full combine doesn't make economic sense. Over the
               following decade, the same engineering discipline that went into
               that first cutter bar expanded into a full range — 2, 3 and
-              4-divider reaper heads, self-propelled tiller reapers, and the
-              ARGO Rice Mill machines that villages and small millers across
-              Punjab actually ask for.
+              4-divider reaper head attachments, tractor-mounted reapers, and the
+              ARGO Gravity Paddy Separator that rice shellers and millers across
+              India actually ask for.
             </p>
             <p className="mt-4 text-[15px] leading-relaxed text-charcoal/65">
               We're a manufacturer first. Every product decision starts on

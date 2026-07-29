@@ -18,9 +18,9 @@ const columns = [
   {
     title: "Products",
     links: [
-      { href: "/products/argo-mini-reaper-3-divider", label: "Mini Reaper (3 Divider)" },
-      { href: "/products/argo-self-propelled-tiller-reaper", label: "Tiller Reaper" },
-      { href: "/products/argo-rice-mill-machine", label: "Rice Mill Machine" },
+      { href: "/products/argo-mini-reaper-3-divider", label: "Reaper Head (3S2C-DS)" },
+      { href: "/products/argo-self-propelled-tiller-reaper", label: "Tractor Mounted Reaper (4S2C-SWC)" },
+      { href: "/products/argo-rice-mill-machine", label: "Gravity Paddy Separator" },
       { href: "/products", label: "Full Catalog" },
     ],
   },

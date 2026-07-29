@@ -14,9 +14,9 @@ export function AboutPreview() {
           <div className="relative overflow-hidden rounded-2xl border border-charcoal/10 bg-gradient-to-br from-mist/60 to-white">
             <Image
               src="/images/gallery/promo-green-tiller.webp"
-              alt="ARGO Mini Reaper self-propelled tiller reaper built at our Rajpura, Punjab works"
-              width={723}
-              height={964}
+              alt="ARGO reaper head attachment on a power tiller, built at our Rajpura, Punjab works"
+              width={1000}
+              height={1336}
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="mx-auto h-auto w-full max-w-[520px] object-contain"
             />
@@ -31,12 +31,12 @@ export function AboutPreview() {
             ARGO Engineering Industries is a Punjab-based manufacturer and
             exporter of high-class agriculture and rice sheller implements.
             From our works near NH-1 in Rajpura, we build the ARGO Mini Reaper
-            multicrop harvesting range and ARGO Rice Mill machines, trusted by
+            reaper head range and ARGO rice sheller machines, trusted by
             custom-hiring centres, dealers and farm owners across Punjab and
             beyond.
           </p>
           <p className="mt-4 text-[15px] leading-relaxed text-charcoal/65">
-            We design for the realities of Punjab fields: standing water,
+            We design for the realities of Indian fields: standing water,
             uneven bunds, mixed crop densities, and the need for a machine a
             single operator can fit, run and service themselves through the
             harvest season.

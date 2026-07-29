@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { company } from "@/data/company";
 
-const SITE_URL = "https://www.argo-india.com";
+const SITE_URL = "https://www.argoengg.in";
 const DEFAULT_OG = "/images/brand/og-image.jpg";
 
 // Punjab-focused keyword base reused across pages. Kept natural and relevant —

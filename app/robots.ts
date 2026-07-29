@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.argo-india.com/sitemap.xml",
+    sitemap: "https://www.argoengg.in/sitemap.xml",
   };
 }

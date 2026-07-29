@@ -4,9 +4,9 @@ export const company = {
   tagline: "Your Partner in Farming",
   founded: 2014,
   description:
-    "ARGO Engineering Industries is a Punjab-based manufacturer and exporter of high-class agriculture and rice sheller implements. From our works near NH-1 in Rajpura, Punjab, we build the ARGO Mini Reaper multicrop harvesting range and ARGO Rice Mill machines for farmers, custom-hiring operators and dealers across Punjab and India.",
+    "ARGO Engineering Industries is a Punjab-based manufacturer and exporter of high-class agriculture and rice sheller implements. From our works near NH-1 in Rajpura, Punjab, we build ARGO reaper head attachments and rice sheller machines for farmers, custom-hiring operators and dealers across Punjab and India.",
   metaDescription:
-    "ARGO Engineering Industries — Punjab manufacturer & exporter of ARGO Mini Reaper multicrop harvesters and rice mill (rice sheller) machines. Based in Rajpura, Punjab, serving Ludhiana, Patiala, Amritsar, Jalandhar and all of Punjab. Your partner in farming.",
+    "ARGO Engineering Industries — Punjab manufacturer & exporter of weeder & tiller reaper head attachments, tractor mounted reapers and the ARGO Gravity Paddy Separator (rice sheller). Based in Rajpura, Punjab, serving Ludhiana, Patiala, Amritsar, Jalandhar and all of Punjab. Your partner in farming.",
   gstin: "03HXTPS2082F1Z2",
   stats: [
     { label: "Years Manufacturing", value: "10+" },
@@ -53,24 +53,19 @@ export const company = {
   ],
   productLines: [
     {
-      name: "ARGO Mini Reaper",
+      name: "Weeder & Tiller Reaper Head Attachments",
       description:
-        "Compact multicrop reaper head for mini tillers and power weeders — clean, fast cutting of paddy, wheat and soybean.",
+        "Compact 2 and 3-divider multicrop reaper heads (Models 2S2C-DS, 3S2C-DS) for power weeders and mini tillers from a minimum of 5 HP.",
     },
     {
-      name: "Tiller Reaper (Self-Propelled)",
+      name: "Tractor Mounted Reaper Head Attachment",
       description:
-        "Engine-driven walk-behind reaper machine for single-operator harvesting of small and medium holdings.",
+        "Wider 4-divider reaper head attachment (Model 4S2C-SWC) for tractor / power-tiller mounting and higher-acreage harvesting.",
     },
     {
-      name: "Reaper Header & Attachments",
+      name: "ARGO Gravity Paddy Separator",
       description:
-        "Standalone 2, 3 and 4-divider cutter-bar headers finished in red, blue, green or yellow, built to a common fit.",
-    },
-    {
-      name: "ARGO Rice Mill Machine",
-      description:
-        "Compact rice sheller / rice mill delivering clean paddy-to-rice milling with efficient, low-maintenance operation.",
+        "Gravity paddy separator (Model GPS-8TPH) for clean, high-capacity separation of paddy from brown rice in rice shellers and mills.",
     },
   ],
 };

@@ -9,9 +9,9 @@ export const products: Product[] = [
       "Compact 3-divider multicrop reaper head that clamps onto power weeders and mini tillers for clean, fast harvesting of paddy, wheat and soybean.",
     description:
       "The ARGO Weeder & Tiller Reaper Head 3-Divider (Model 3S2C-DS) is the workhorse of our range — a lightweight, high-strength cutting head engineered for small and medium farms across India. It attaches to power weeders and mini tillers from a minimum of 5 HP, turning an everyday machine into a fast multicrop harvester. Sharp, hardened cutting blades and adjustable crop guards lay stalks in a clean, uniform swath with minimal grain loss, while the high-grade steel and iron frame is built to take a full season of paddy and wheat harvesting. Finished and field-tested at our Rajpura works, each head ships ready to bolt on and cut.",
-    image: "/images/products/reaper-3s2c-green.webp",
+    image: "/images/products/reaper-3s2c-green-v2.webp",
     gallery: [
-      "/images/products/reaper-3s2c-green.webp",
+      "/images/products/reaper-3s2c-green-v2.webp",
       "/images/products/reaper-head-red.webp",
       "/images/gallery/promo-red-head.webp",
       "/images/gallery/reaper-head-specs.webp",
@@ -92,7 +92,7 @@ export const products: Product[] = [
       "/images/products/reaper-swc-4s2c-blue.webp",
       "/images/products/mini-reaper-blue.webp",
       "/images/gallery/promo-blue-farmer.webp",
-      "/images/hero/hero-blue-field.webp",
+      "/images/hero/hero-blue-field-v2.webp",
       "/images/products/tiller-reaper-4s2c-green.webp",
       "/images/products/mini-reaper-green.webp",
       "/images/gallery/field-reaper-green.webp",

@@ -16,9 +16,12 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        // Cache images well for performance, but allow revalidation so that
+        // replacing an image at the same path propagates on the next deploy
+        // (no "immutable", which would pin stale images for up to a year).
         source: "/images/:path*",
         headers: [
-          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+          { key: "Cache-Control", value: "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800" },
         ],
       },
     ];

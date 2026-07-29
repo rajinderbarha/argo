@@ -24,7 +24,7 @@ type Slide = {
 
 const slides: Slide[] = [
   {
-    image: "/images/hero/hero-blue-field.webp",
+    image: "/images/hero/hero-blue-field-v2.webp",
     alt: "ARGO Mini Reaper harvesting a golden paddy field at sunrise in Punjab",
     position: "70% center",
     eyebrow: "Your Partner in Farming",
@@ -44,7 +44,7 @@ const slides: Slide[] = [
     cta: { label: "Explore rice sheller", href: "/products/argo-rice-mill-machine" },
   },
   {
-    image: "/images/hero/hero-reaper-family.webp",
+    image: "/images/hero/hero-reaper-family-v2.webp",
     alt: "ARGO reaper head range in yellow, green and blue mounted on a power tiller",
     position: "center 62%",
     eyebrow: "One Machine, Every Crop",

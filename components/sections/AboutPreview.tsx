@@ -13,7 +13,7 @@ export function AboutPreview() {
           <div className="absolute -left-4 -top-4 hidden h-full w-full rounded-2xl border-2 border-forest/15 sm:block" />
           <div className="relative overflow-hidden rounded-2xl border border-charcoal/10 bg-gradient-to-br from-mist/60 to-white">
             <Image
-              src="/images/gallery/promo-green-tiller.webp"
+              src="/images/gallery/promo-green-tiller-v2.webp"
               alt="ARGO reaper head attachment on a power tiller, built at our Rajpura, Punjab works"
               width={1000}
               height={1336}

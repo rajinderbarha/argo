@@ -12,13 +12,13 @@ export const metadata: Metadata = buildMetadata({
 });
 
 const items = [
-  { src: "/images/hero/hero-reaper-family.webp", alt: "ARGO Mini Reaper range in yellow, green and blue mounted on a power tiller in Punjab", tag: "Reaper Range" },
+  { src: "/images/hero/hero-reaper-family-v2.webp", alt: "ARGO Mini Reaper range in yellow, green and blue mounted on a power tiller in Punjab", tag: "Reaper Range" },
   { src: "/images/products/mini-reaper-blue.webp", alt: "Blue ARGO self-propelled tiller reaper, front view", tag: "Tiller Reaper" },
   { src: "/images/products/mini-reaper-red.webp", alt: "Red ARGO Mini Reaper machine with engine, front view", tag: "Tiller Reaper" },
   { src: "/images/products/mini-reaper-green.webp", alt: "Green ARGO Mini Reaper self-propelled machine", tag: "Tiller Reaper" },
   { src: "/images/products/reaper-head-red.webp", alt: "Red ARGO Mini Reaper 3-divider cutting head", tag: "Reaper Head" },
   { src: "/images/products/reaper-head-yellow.webp", alt: "Yellow ARGO Mini Reaper cutting head", tag: "Reaper Head" },
-  { src: "/images/products/reaper-3s2c-green.webp", alt: "Green ARGO Mini Reaper 3-divider head studio shot", tag: "Reaper Head" },
+  { src: "/images/products/reaper-3s2c-green-v2.webp", alt: "Green ARGO Mini Reaper 3-divider head studio shot", tag: "Reaper Head" },
   { src: "/images/products/reaper-2s2c-yellow.webp", alt: "Yellow ARGO Mini Reaper 2-divider compact head", tag: "Reaper Head" },
   { src: "/images/gallery/promo-red-head.webp", alt: "Red ARGO Mini Reaper cutting head, close-up promo", tag: "Reaper Head" },
   { src: "/images/products/rice-mill-front.webp", alt: "ARGO Gravity Paddy Separator (rice sheller), front view", tag: "Rice Sheller" },

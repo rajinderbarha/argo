@@ -79,23 +79,23 @@ export function Navbar() {
       <div
         className={cn(
           "container-px flex items-center justify-between transition-[height] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]",
-          scrolled ? "h-[68px]" : "h-20"
+          scrolled ? "h-[76px]" : "h-24"
         )}
       >
-        <Link href="/" className="group flex items-center gap-2.5">
+        <Link href="/" className="group flex items-center gap-3">
           <motion.div whileHover={{ rotate: -6, scale: 1.08 }} transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}>
             <Image
               src="/images/brand/argo-logo.png"
               alt="ARGO Engineering Industries"
-              width={40}
-              height={48}
-              className="h-11 w-auto"
+              width={64}
+              height={64}
+              className={cn("w-auto transition-[height] duration-300", scrolled ? "h-12" : "h-16")}
               priority
             />
           </motion.div>
-          <span className="font-display text-lg font-bold leading-none text-charcoal">
+          <span className="font-display text-2xl font-bold leading-none text-charcoal">
             ARGO
-            <span className="block font-mono text-[9px] font-normal uppercase tracking-[0.2em] text-forest-600">
+            <span className="mt-1 block font-mono text-[11px] font-normal uppercase tracking-[0.18em] text-forest-600">
               Engineering Industries
             </span>
           </span>

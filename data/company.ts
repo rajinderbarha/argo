@@ -2,14 +2,14 @@ export const company = {
   name: "ARGO Engineering Industries",
   shortName: "ARGO",
   tagline: "Your Partner in Farming",
-  founded: 2014,
+  founded: 2019,
   description:
     "ARGO Engineering Industries is a Punjab-based manufacturer and exporter of high-class agriculture and rice sheller implements. From our works near NH-1 in Rajpura, Punjab, we build ARGO reaper head attachments and rice sheller machines for farmers, custom-hiring operators and dealers across Punjab and India.",
   metaDescription:
     "ARGO Engineering Industries — Punjab manufacturer & exporter of weeder & tiller reaper head attachments, tractor mounted reapers and the ARGO Gravity Paddy Separator (rice sheller). Based in Rajpura, Punjab, serving Ludhiana, Patiala, Amritsar, Jalandhar and all of Punjab. Your partner in farming.",
   gstin: "03HXTPS2082F1Z2",
   stats: [
-    { label: "Years Manufacturing", value: "10+" },
+    { label: "Years Manufacturing", value: "6+" },
     { label: "Dealers Across Punjab & India", value: "150+" },
     { label: "Machines Delivered", value: "12,000+" },
     { label: "Crops Harvested", value: "15+" },

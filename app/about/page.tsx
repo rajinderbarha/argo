@@ -12,7 +12,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "About Us | Punjab Agriculture & Rice Sheller Manufacturer",
   description:
-    "ARGO Engineering Industries is a Punjab-based manufacturer and exporter of high-class agriculture and rice sheller implements, based in Rajpura and serving farmers across Punjab and India for over a decade.",
+    "ARGO Engineering Industries is a Punjab-based manufacturer and exporter of high-class agriculture and rice sheller implements, based in Rajpura and serving farmers across Punjab and India since 2019.",
   path: "/about",
 });
 
@@ -47,7 +47,7 @@ export default function AboutPage() {
               ARGO Engineering Industries began with a single multicrop reaper
               head, designed for the smallholder paddy and wheat fields of
               Punjab where a full combine doesn't make economic sense. Over the
-              following decade, the same engineering discipline that went into
+              following years, the same engineering discipline that went into
               that first cutter bar expanded into a full range — 2, 3 and
               4-divider reaper head attachments, tractor-mounted reapers, and the
               ARGO Gravity Paddy Separator that rice shellers and millers across
@@ -93,10 +93,15 @@ export default function AboutPage() {
       <section className="bg-mist/40 py-20">
         <div className="container-px">
           <Reveal className="mb-10 max-w-xl">
-            <span className="section-eyebrow">Manufacturing process</span>
+            <span className="section-eyebrow">Our machines</span>
             <h2 className="mt-3 font-display text-3xl font-bold text-charcoal">
-              The shop floor, in three frames
+              The ARGO range, built and tested in-house.
             </h2>
+            <p className="mt-4 text-[15px] leading-relaxed text-charcoal/65">
+              From reaper head attachments to the Gravity Paddy Separator, every
+              ARGO machine is fabricated, assembled and field-tested at our
+              Rajpura works before it ships.
+            </p>
           </Reveal>
           <RevealGroup className="grid grid-cols-1 gap-5 sm:grid-cols-3" stagger={0.12}>
             {factoryImages.map((img) => (

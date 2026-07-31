@@ -14,9 +14,9 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "t2",
-    name: "Manpreet Kaur",
+    name: "Rakesh Yadav",
     role: "Farm Owner",
-    location: "Bathinda, Punjab",
+    location: "Karnal, Haryana",
     lang: "en",
     quote:
       "The reaper was delivered right before the wheat season, exactly on time. The cutting is neat and it handles the crop gently. My harvesting now finishes in half the days it used to take.",
@@ -36,9 +36,9 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "t4",
-    name: "Rajesh Kumar",
+    name: "Suresh Patel",
     role: "ARGO Dealer",
-    location: "Ludhiana, Punjab",
+    location: "Rajkot, Gujarat",
     lang: "en",
     quote:
       "As a dealer, availability is everything during peak season. ARGO delivers the colours and models our customers ask for, and every unit arrives pre-tested. That reliability has made them our first choice.",
@@ -58,9 +58,9 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "t6",
-    name: "Baljit Singh",
+    name: "Mahesh Chaudhary",
     role: "Custom Hiring Centre",
-    location: "Jalandhar, Punjab",
+    location: "Meerut, Uttar Pradesh",
     lang: "en",
     quote:
       "Once I needed a spare part in the middle of the season and the ARGO team dispatched it the very next day, guiding me over the phone the whole time. Their after-sales support is genuinely dependable.",
@@ -80,9 +80,9 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "t8",
-    name: "Amarjit Singh",
+    name: "Devendra Rao",
     role: "Farm Owner",
-    location: "Amritsar, Punjab",
+    location: "Nagpur, Maharashtra",
     lang: "en",
     quote:
       "Five years with ARGO machines and they have never let us down. Strong build, honest people, and quick support whenever we need it. I recommend them to every farmer I meet.",

@@ -53,6 +53,16 @@ const slides: Slide[] = [
     text: "Fits power weeders and mini tillers from a minimum of 5 HP. Strong performance, durable build, fuel efficient and low maintenance.",
     cta: { label: "See the reaper range", href: "/products" },
   },
+  {
+    image: "/images/hero/hero-red-reaper.webp",
+    alt: "Red self-propelled ARGO Mini Reaper with engine and 3-divider cutter head",
+    position: "center 45%",
+    eyebrow: "Self-Propelled Reaper",
+    title: "One machine that",
+    highlight: "cuts, drives and delivers.",
+    text: "The self-propelled ARGO Mini Reaper brings engine, drive and cutter head together — a complete, ready-to-run harvester for paddy, wheat and soybean.",
+    cta: { label: "Explore products", href: "/products" },
+  },
 ];
 
 const AUTOPLAY_MS = 6000;

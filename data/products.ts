@@ -35,7 +35,7 @@ export const products: Product[] = [
   {
     slug: "argo-mini-reaper-3s2c-ds",
     name: "ARGO Mini Reaper 3S2C-DS",
-    category: "Reaper Series",
+    category: "Weeder & Tiller Reaper Attachments",
     shortDescription:
       "3-row, 1016 mm PTO-driven mini reaper for fast, clean harvesting of wheat, paddy, soybean and similar crops.",
     description:
@@ -65,7 +65,7 @@ export const products: Product[] = [
   {
     slug: "argo-mini-reaper-2s2c-ds",
     name: "ARGO Mini Reaper 2S2C-DS",
-    category: "Reaper Series",
+    category: "Weeder & Tiller Reaper Attachments",
     shortDescription:
       "2-row, 711 mm PTO-driven mini reaper — compact and lightweight for wheat, paddy, soybean and similar crops.",
     description:
@@ -94,18 +94,13 @@ export const products: Product[] = [
   {
     slug: "argo-mini-reaper-3s2c",
     name: "ARGO Mini Reaper 3S2C",
-    category: "Reaper Series",
+    category: "Weeder & Tiller Reaper Attachments",
     shortDescription:
       "3-row, 1016 mm PTO-driven mini reaper with a compact 410 mm frame height for wheat, paddy, soybean and similar crops.",
     description:
       "The ARGO Mini Reaper 3S2C is a 3-row model in the Argo Reaper Series with a 1016 mm working width and a compact 410 mm frame height. Running from a minimum of 5 HP and PTO driven, it harvests wheat, paddy, soybean and similar crops fast and cleanly, with a high-grade steel frame built for long service life and low maintenance.",
-    image: "/images/products/reaper-head-red.webp",
-    gallery: [
-      "/images/products/reaper-head-red.webp",
-      "/images/products/reaper-head-red-side.webp",
-      "/images/gallery/promo-red-head.webp",
-      "/images/gallery/banner-reaper-red.webp",
-    ],
+    image: "/images/products/reaper-3s2c-front.webp",
+    gallery: ["/images/products/reaper-3s2c-front.webp"],
     specs: [
       { label: "Model", value: "3S2C" },
       { label: "Working Width", value: "1016 mm (3.5 ft)" },
@@ -125,17 +120,13 @@ export const products: Product[] = [
   {
     slug: "argo-mini-reaper-2s2c",
     name: "ARGO Mini Reaper 2S2C",
-    category: "Reaper Series",
+    category: "Weeder & Tiller Reaper Attachments",
     shortDescription:
       "2-row, 711 mm PTO-driven mini reaper with a compact 410 mm frame height, ideal for wheat and paddy.",
     description:
       "The ARGO Mini Reaper 2S2C is the compact 2-row model with a 711 mm working width and a 410 mm frame height. Lightweight at 55 kg and running from a minimum of 5 HP, it is PTO driven and built with a high-grade steel frame for clean, efficient wheat and paddy harvesting with low maintenance and long service life.",
-    image: "/images/products/reaper-2s2c-yellow.webp",
-    gallery: [
-      "/images/products/reaper-2s2c-yellow.webp",
-      "/images/products/reaper-head-yellow.webp",
-      "/images/gallery/banner-reaper-yellow.webp",
-    ],
+    image: "/images/products/reaper-2s2c-green.webp",
+    gallery: ["/images/products/reaper-2s2c-green.webp"],
     specs: [
       { label: "Model", value: "2S2C" },
       { label: "Working Width", value: "711 mm (2.5 ft)" },
@@ -157,16 +148,13 @@ export const products: Product[] = [
   {
     slug: "argo-tiller-reaper-head-4s2c-tr",
     name: "ARGO Tiller Reaper Head Attachment 4S2C-TR",
-    category: "Reaper Head Attachments",
+    category: "Weeder & Tiller Reaper Attachments",
     shortDescription:
       "4-row, 1320 mm belt-driven reaper head attachment for power tillers — harvests wheat, paddy and similar crops.",
     description:
       "The ARGO Tiller Reaper Head Attachment (Model 4S2C-TR) is a 4-row cutting head with a 1320 mm working width, built to mount on power tillers. Belt driven and requiring a minimum of 12 HP, it is constructed from high-grade steel for tough Indian field conditions and delivers clean, efficient harvesting of wheat, paddy and similar crops.",
     image: "/images/products/tiller-reaper-4s2c-green.webp",
     gallery: [
-      "/images/products/tiller-reaper-4s2c-green.webp",
-      "/images/products/mini-reaper-green.webp",
-      "/images/gallery/field-reaper-green.webp",
       "/images/gallery/home-tiller-reaper.webp",
     ],
     specs: [
@@ -188,7 +176,7 @@ export const products: Product[] = [
   {
     slug: "argo-tractor-mounted-reaper-head-4s2c-swc",
     name: "ARGO Tractor Mounted Reaper Head Attachment 4S2C-SWC",
-    category: "Reaper Head Attachments",
+    category: "Tractor Mounted Reaper Head",
     shortDescription:
       "4-row, 1320 mm PTO-driven reaper head attachment for tractor mounting — harvests wheat, paddy and similar crops.",
     description:
@@ -304,14 +292,14 @@ export const products: Product[] = [
 
 export const productCategories = [
   {
-    name: "Reaper Series",
+    name: "Weeder & Tiller Reaper Attachments",
     description:
-      "Fast, clean multicrop harvesting — 2 and 3-row ARGO Mini Reaper models for wheat, paddy, soybean, barley and more.",
+      "Weeder & tiller-mounted reaper attachments — 2, 3 and 4-row models for fast, clean multicrop harvesting of wheat, paddy, soybean and more.",
   },
   {
-    name: "Reaper Head Attachments",
+    name: "Tractor Mounted Reaper Head",
     description:
-      "4-row reaper head attachments for power-tiller (belt-driven) and tractor (PTO-driven) mounting.",
+      "PTO-driven 4-row reaper head attachment (4S2C-SWC) for tractor mounting and higher-acreage harvesting.",
   },
   {
     name: "Rice Sheller / Gravity Paddy Separator",

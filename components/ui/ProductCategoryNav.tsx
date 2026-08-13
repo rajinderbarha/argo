@@ -15,8 +15,8 @@ import { cn } from "@/lib/utils";
  * No dropdowns, no search — one tap to browse.
  */
 const CATEGORY_ICONS: Record<string, LucideIcon> = {
-  "Reaper Series": Scissors,
-  "Reaper Head Attachments": Tractor,
+  "Weeder & Tiller Reaper Attachments": Scissors,
+  "Tractor Mounted Reaper Head": Tractor,
   "Rice Sheller / Gravity Paddy Separator": Factory,
   "Cutter Cum Rack": Combine,
 };

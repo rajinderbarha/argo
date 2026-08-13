@@ -23,6 +23,8 @@ const items = [
   { src: "/images/gallery/promo-red-head.webp", alt: "Red ARGO Mini Reaper cutting head, close-up promo", tag: "Reaper Head" },
   { src: "/images/products/rice-mill-front.webp", alt: "ARGO Gravity Paddy Separator (rice sheller), front view", tag: "Rice Sheller" },
   { src: "/images/products/rice-mill-angle.webp", alt: "ARGO Gravity Paddy Separator, angled view with control panel", tag: "Rice Sheller" },
+  { src: "/images/products/cutter-cum-rack.webp", alt: "ARGO Cutter Cum Rack mounted on a tractor, front & back mounted", tag: "Cutter Cum Rack" },
+  { src: "/images/products/cutter-cum-rack-spec.webp", alt: "ARGO Cutter Cum Rack specifications and features", tag: "Cutter Cum Rack" },
   { src: "/images/gallery/promo-red-farmer.webp", alt: "Punjab farmer with a red ARGO Mini Reaper in a paddy field", tag: "In the Field" },
   { src: "/images/gallery/promo-blue-farmer.webp", alt: "Punjab farmer with a blue ARGO Mini Reaper machine", tag: "In the Field" },
   { src: "/images/gallery/promo-red-tractor.webp", alt: "Red ARGO Mini Reaper mounted on a mini tractor in a field", tag: "In the Field" },

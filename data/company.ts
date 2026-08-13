@@ -53,14 +53,14 @@ export const company = {
   ],
   productLines: [
     {
-      name: "Reaper Series",
+      name: "Weeder & Tiller Reaper Attachments",
       description:
-        "2 and 3-row ARGO Mini Reaper models (3S2C-DS, 2S2C-DS, 3S2C, 2S2C) for fast, clean harvesting of wheat, paddy, soybean and similar crops.",
+        "ARGO Mini Reaper models (3S2C-DS, 2S2C-DS, 3S2C, 2S2C) and the 4S2C-TR tiller reaper head for fast, clean harvesting of wheat, paddy, soybean and similar crops.",
     },
     {
-      name: "Reaper Head Attachments",
+      name: "Tractor Mounted Reaper Head",
       description:
-        "4-row reaper head attachments — Tiller (4S2C-TR, belt-driven) and Tractor Mounted (4S2C-SWC, PTO-driven).",
+        "PTO-driven 4-row tractor mounted reaper head attachment (Model 4S2C-SWC) for higher-acreage harvesting.",
     },
     {
       name: "Rice Sheller / Gravity Paddy Separator",

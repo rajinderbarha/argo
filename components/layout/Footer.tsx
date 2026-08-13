@@ -18,9 +18,10 @@ const columns = [
   {
     title: "Products",
     links: [
-      { href: "/products/argo-mini-reaper-3-divider", label: "Reaper Head (3S2C-DS)" },
-      { href: "/products/argo-self-propelled-tiller-reaper", label: "Tractor Mounted Reaper (4S2C-SWC)" },
-      { href: "/products/argo-rice-mill-machine", label: "Gravity Paddy Separator" },
+      { href: "/products/argo-mini-reaper-3s2c-ds", label: "Mini Reaper (3S2C-DS)" },
+      { href: "/products/argo-tiller-reaper-head-4s2c-tr", label: "Tiller Reaper Head (4S2C-TR)" },
+      { href: "/products/argo-gravity-paddy-separator-gps-8tph", label: "Gravity Paddy Separator" },
+      { href: "/products/argo-cutter-cum-rack", label: "Cutter Cum Rack" },
       { href: "/products", label: "Full Catalog" },
     ],
   },

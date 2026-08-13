@@ -53,19 +53,24 @@ export const company = {
   ],
   productLines: [
     {
-      name: "Weeder & Tiller Reaper Head Attachments",
+      name: "Reaper Series",
       description:
-        "Compact 2 and 3-divider multicrop reaper heads (Models 2S2C-DS, 3S2C-DS) for power weeders and mini tillers from a minimum of 5 HP.",
+        "2 and 3-row ARGO Mini Reaper models (3S2C-DS, 2S2C-DS, 3S2C, 2S2C) for fast, clean harvesting of wheat, paddy, soybean and similar crops.",
     },
     {
-      name: "Tractor Mounted Reaper Head Attachment",
+      name: "Reaper Head Attachments",
       description:
-        "Wider 4-divider reaper head attachment (Model 4S2C-SWC) for tractor / power-tiller mounting and higher-acreage harvesting.",
+        "4-row reaper head attachments — Tiller (4S2C-TR, belt-driven) and Tractor Mounted (4S2C-SWC, PTO-driven).",
     },
     {
-      name: "ARGO Gravity Paddy Separator",
+      name: "Rice Sheller / Gravity Paddy Separator",
       description:
-        "Gravity paddy separator (Model GPS-8TPH) for clean, high-capacity separation of paddy from brown rice in rice shellers and mills.",
+        "Gravity paddy separators (GPS 8TPH & GPS 4TPH) separating paddy, brown rice and mixture for rice shellers and mills.",
+    },
+    {
+      name: "Cutter Cum Rack",
+      description:
+        "Front & back mounted cutter cum rack for efficient cutting and smooth racking of maize, sorghum and similar crops.",
     },
   ],
 };

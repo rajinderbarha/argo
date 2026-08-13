@@ -145,9 +145,11 @@ export default async function ProductDetailPage({
               <Button asChild size="lg">
                 <a href="#inquire">Enquire about this product</a>
               </Button>
-              <Button variant="outline" size="lg">
-                Download brochure
-                <Download className="h-4 w-4" />
+              <Button asChild variant="outline" size="lg">
+                <a href="/argo-catalogue.pdf" download="ARGO-Engineering-Industries-Catalogue.pdf">
+                  Download brochure
+                  <Download className="h-4 w-4" />
+                </a>
               </Button>
             </div>
           </Reveal>

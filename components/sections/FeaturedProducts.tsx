@@ -13,7 +13,7 @@ export function FeaturedProducts() {
           <Reveal variants={slideRight}>
             <span className="section-eyebrow">Featured equipment</span>
             <h2 className="mt-3 font-display text-4xl font-bold leading-tight text-charcoal">
-              The current ARGO reaper line-up.
+              The complete ARGO product range.
             </h2>
           </Reveal>
           <Reveal variants={fadeUp} delay={0.15}>

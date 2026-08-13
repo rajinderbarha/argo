@@ -41,7 +41,7 @@ const slides: Slide[] = [
     title: "ARGO Gravity Paddy Separator,",
     highlight: "clean grain, every batch.",
     text: "Model GPS-8TPH separates unhulled paddy from brown rice by gravity — high-capacity, low-maintenance separation for rice shellers, mills and cooperatives.",
-    cta: { label: "Explore rice sheller", href: "/products/argo-rice-mill-machine" },
+    cta: { label: "Explore rice sheller", href: "/products/argo-gravity-paddy-separator-gps-8tph" },
   },
   {
     image: "/images/hero/hero-reaper-family-v2.webp",

@@ -17,9 +17,10 @@ export const metadata: Metadata = buildMetadata({
 });
 
 const factoryImages = [
-  { src: "/images/products/reaper-head-red.webp", alt: "ARGO Mini Reaper cutting head fabricated at our Rajpura, Punjab works" },
+  { src: "/images/products/reaper-3s2c-ds-clean.webp", alt: "ARGO Mini Reaper 3S2C-DS reaper head, built and tested at our Rajpura, Punjab works" },
   { src: "/images/products/rice-mill-front.webp", alt: "ARGO Gravity Paddy Separator assembled and tested in-house" },
   { src: "/images/products/mini-reaper-blue.webp", alt: "ARGO self-propelled tiller reaper ready for dispatch" },
+  { src: "/images/products/cutter-cum-rack.webp", alt: "ARGO Cutter Cum Rack, front & back mounted, built for Indian field conditions" },
 ];
 
 export default function AboutPage() {
@@ -103,7 +104,7 @@ export default function AboutPage() {
               Rajpura works before it ships.
             </p>
           </Reveal>
-          <RevealGroup className="grid grid-cols-1 gap-5 sm:grid-cols-3" stagger={0.12}>
+          <RevealGroup className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4" stagger={0.12}>
             {factoryImages.map((img) => (
               <RevealItem key={img.src} variants={scaleIn} className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-charcoal/10 bg-gradient-to-br from-mist/60 to-white">
                 <Image

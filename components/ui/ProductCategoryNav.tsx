@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, Scissors, Tractor, Factory, type LucideIcon } from "lucide-react";
+import { ArrowRight, Scissors, Tractor, Factory, Combine, type LucideIcon } from "lucide-react";
 import { Product } from "@/types";
 import { productCategories } from "@/data/products";
 import { cn } from "@/lib/utils";
@@ -15,9 +15,10 @@ import { cn } from "@/lib/utils";
  * No dropdowns, no search — one tap to browse.
  */
 const CATEGORY_ICONS: Record<string, LucideIcon> = {
-  "Weeder & Tiller Reaper Head Attachments": Scissors,
-  "Tractor Mounted Reaper Head Attachment": Tractor,
-  "Rice Sheller Machines": Factory,
+  "Reaper Series": Scissors,
+  "Reaper Head Attachments": Tractor,
+  "Rice Sheller / Gravity Paddy Separator": Factory,
+  "Cutter Cum Rack": Combine,
 };
 
 function ProductCard({ product }: { product: Product }) {
@@ -75,7 +76,7 @@ export function ProductCategoryNav({ products }: { products: Product[] }) {
       <div
         role="tablist"
         aria-label="Product categories"
-        className="grid grid-cols-1 gap-4 sm:grid-cols-3"
+        className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"
       >
         {categories.map((cat) => {
           const Icon = CATEGORY_ICONS[cat.name] ?? Factory;

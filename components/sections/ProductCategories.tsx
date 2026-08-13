@@ -14,7 +14,7 @@ export function ProductCategoriesSection() {
               Product range
             </span>
             <h2 className="mt-3 font-display text-4xl font-bold text-white">
-              Three categories. One build standard.
+              Four categories. One build standard.
             </h2>
           </Reveal>
           <Reveal variants={fadeUp} delay={0.15}>

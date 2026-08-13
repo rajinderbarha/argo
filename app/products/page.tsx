@@ -6,9 +6,9 @@ import { products } from "@/data/products";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Product Catalog — Reaper Head Attachments & Rice Sheller | Punjab",
+  title: "Product Catalog — Reapers, Rice Sheller & Cutter Cum Rack | Punjab",
   description:
-    "Browse ARGO Engineering Industries' catalog — weeder & tiller reaper head attachments (2S2C-DS, 3S2C-DS), tractor mounted reapers (4S2C-SWC) and the ARGO Gravity Paddy Separator (GPS-8TPH) rice sheller. Manufactured in Rajpura, Punjab.",
+    "Browse ARGO Engineering Industries' full catalogue — the ARGO Mini Reaper Series (3S2C-DS, 2S2C-DS, 3S2C, 2S2C), reaper head attachments (4S2C-TR, 4S2C-SWC), Gravity Paddy Separators (GPS 8TPH & 4TPH) and the ARGO Cutter Cum Rack. Manufactured in Rajpura, Punjab.",
   path: "/products",
 });
 

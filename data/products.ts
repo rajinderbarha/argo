@@ -43,8 +43,7 @@ export const products: Product[] = [
     image: "/images/products/reaper-3s2c-ds-clean.webp",
     gallery: [
       "/images/products/reaper-3s2c-ds-clean.webp",
-      "/images/products/reaper-3s2c-green-v2.webp",
-     
+      "/images/products/reaper-3s2c-ds-banner.webp",
     ],
     specs: [
       { label: "Model", value: "3S2C-DS" },
@@ -73,7 +72,7 @@ export const products: Product[] = [
     image: "/images/products/reaper-2s2c-yellow.webp",
     gallery: [
       "/images/products/reaper-2s2c-yellow.webp",
-      "/images/gallery/banner-reaper-yellow.webp",
+      "/images/products/reaper-2s2c-ds-banner.webp",
     ],
     specs: [
       { label: "Model", value: "2S2C-DS" },
@@ -100,7 +99,10 @@ export const products: Product[] = [
     description:
       "The ARGO Mini Reaper 3S2C is a 3-row model in the Argo Reaper Series with a 1016 mm working width and a compact 410 mm frame height. Running from a minimum of 5 HP and PTO driven, it harvests wheat, paddy, soybean and similar crops fast and cleanly, with a high-grade steel frame built for long service life and low maintenance.",
     image: "/images/products/reaper-3s2c-front.webp",
-    gallery: ["/images/products/reaper-3s2c-front.webp"],
+    gallery: [
+      "/images/products/reaper-3s2c-front.webp",
+      "/images/products/reaper-3s2c-banner.webp",
+    ],
     specs: [
       { label: "Model", value: "3S2C" },
       { label: "Working Width", value: "1016 mm (3.5 ft)" },
@@ -126,7 +128,10 @@ export const products: Product[] = [
     description:
       "The ARGO Mini Reaper 2S2C is the compact 2-row model with a 711 mm working width and a 410 mm frame height. Lightweight at 55 kg and running from a minimum of 5 HP, it is PTO driven and built with a high-grade steel frame for clean, efficient wheat and paddy harvesting with low maintenance and long service life.",
     image: "/images/products/reaper-2s2c-green.webp",
-    gallery: ["/images/products/reaper-2s2c-green.webp"],
+    gallery: [
+      "/images/products/reaper-2s2c-green.webp",
+      "/images/products/reaper-2s2c-banner.webp",
+    ],
     specs: [
       { label: "Model", value: "2S2C" },
       { label: "Working Width", value: "711 mm (2.5 ft)" },
@@ -155,7 +160,9 @@ export const products: Product[] = [
       "The ARGO Tiller Reaper Head Attachment (Model 4S2C-TR) is a 4-row cutting head with a 1320 mm working width, built to mount on power tillers. Belt driven and requiring a minimum of 12 HP, it is constructed from high-grade steel for tough Indian field conditions and delivers clean, efficient harvesting of wheat, paddy and similar crops.",
     image: "/images/products/tiller-reaper-4s2c-green.webp",
     gallery: [
+      "/images/products/tiller-reaper-4s2c-green.webp",
       "/images/gallery/home-tiller-reaper.webp",
+      "/images/products/reaper-4s2c-tr-banner.webp",
     ],
     specs: [
       { label: "Model", value: "4S2C-TR" },
@@ -184,9 +191,9 @@ export const products: Product[] = [
     image: "/images/products/reaper-swc-4s2c-blue.webp",
     gallery: [
       "/images/products/reaper-swc-4s2c-blue.webp",
-      "/images/products/mini-reaper-blue.webp",
-      "/images/gallery/promo-blue-farmer.webp",
       "/images/products/mini-reaper-blue-2.webp",
+      "/images/products/reaper-4s2c-swc-banner.webp",
+      "/images/gallery/promo-blue-farmer.webp",
     ],
     specs: [
       { label: "Model", value: "4S2C-SWC" },
@@ -218,7 +225,7 @@ export const products: Product[] = [
     image: "/images/products/rice-mill-front.webp",
     gallery: [
       "/images/products/rice-mill-front.webp",
-      "/images/gallery/banner-rice-mill.webp",
+      "/images/products/gps-8tph-banner.webp",
     ],
     specs: [
       { label: "Model", value: "GPS 8TPH" },
@@ -240,7 +247,6 @@ export const products: Product[] = [
     image: "/images/products/rice-mill-angle.webp",
     gallery: [
       "/images/products/rice-mill-angle.webp",
-      "/images/gallery/rice-mill-brand.webp",
       "/images/gallery/rice-mill-solutions.webp",
     ],
     specs: [
@@ -265,7 +271,7 @@ export const products: Product[] = [
     image: "/images/products/cutter-cum-rack.webp",
     gallery: [
       "/images/products/cutter-cum-rack.webp",
-      "/images/products/cutter-cum-rack-spec.webp",
+      "/images/products/cutter-cum-rack-banner.webp",
     ],
     specs: [
       { label: "Mounting", value: "Front Mounted & Back Mounted" },

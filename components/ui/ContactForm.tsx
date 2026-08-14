@@ -9,14 +9,35 @@ import { Button } from "./Button";
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (loading) return;
+    setError(null);
     setLoading(true);
-    setTimeout(() => {
+    const payload = Object.fromEntries(new FormData(e.currentTarget).entries());
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...payload, formType: "contact" }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && data.ok) {
+        setSubmitted(true);
+      } else {
+        setError(
+          "We were unable to submit your enquiry at this time. Please try again or contact us directly.",
+        );
+      }
+    } catch {
+      setError(
+        "We were unable to submit your enquiry at this time. Please try again or contact us directly.",
+      );
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 900);
+    }
   }
 
   return (
@@ -36,9 +57,10 @@ export function ContactForm() {
           >
             <CheckCircle2 className="h-10 w-10 text-forest" />
           </motion.div>
-          <h3 className="font-display text-lg font-semibold text-charcoal">Message sent</h3>
+          <h3 className="font-display text-lg font-semibold text-charcoal">Enquiry received</h3>
           <p className="text-sm text-charcoal/60">
-            Thanks for reaching out — our team will get back to you within one business day.
+            Thank you for contacting ARGO Engineering Industries. Your enquiry has been
+            received successfully. Our team will get back to you soon.
           </p>
         </motion.div>
       ) : (
@@ -51,6 +73,11 @@ export function ContactForm() {
           onSubmit={handleSubmit}
           className="flex flex-col gap-5"
         >
+          {/* Honeypot — hidden from real users; bots that fill it are ignored. */}
+          <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
+            <label htmlFor="company_website">Do not fill this field</label>
+            <input id="company_website" name="company_website" type="text" tabIndex={-1} autoComplete="off" />
+          </div>
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="flex flex-col gap-2">
               <Label htmlFor="name">Full name</Label>
@@ -69,6 +96,11 @@ export function ContactForm() {
             <Label htmlFor="message">Message</Label>
             <Textarea id="message" name="message" required placeholder="Tell us what you need…" />
           </div>
+          {error && (
+            <p role="alert" className="text-sm font-medium text-red-600">
+              {error}
+            </p>
+          )}
           <Button type="submit" size="lg" disabled={loading} className="w-full sm:w-auto">
             {loading ? "Sending…" : "Send message"}
             <Send className="h-4 w-4" />

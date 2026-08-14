@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  // Nodemailer uses Node built-ins / dynamic requires and must not be bundled
+  // by Turbopack/webpack — load it as a normal Node module at runtime.
+  serverExternalPackages: ["nodemailer"],
   images: {
     formats: ["image/avif", "image/webp"],
   },

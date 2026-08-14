@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Space_Grotesk, Inter, IBM_Plex_Mono, Noto_Sans_Gurmukhi } from "next/font/google";
+import localFont from "next/font/local";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingActions } from "@/components/ui/FloatingActions";
@@ -8,22 +8,36 @@ import { company } from "@/data/company";
 import { buildMetadata } from "@/lib/seo";
 import "./globals.css";
 
-const display = Space_Grotesk({
-  subsets: ["latin"],
+// Self-hosted fonts (next/font/local) — the woff2 files live in app/fonts.
+// This avoids next/font/google fetching from Google's CDN at dev/build time,
+// which was failing under Turbopack (404s on font files -> module-not-found).
+const display = localFont({
+  src: [
+    { path: "./fonts/space-grotesk-500.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/space-grotesk-700.woff2", weight: "700", style: "normal" },
+  ],
   variable: "--font-display",
-  weight: ["500", "700"],
+  display: "swap",
 });
-const body = Inter({ subsets: ["latin"], variable: "--font-body" });
-const mono = IBM_Plex_Mono({
-  subsets: ["latin"],
+const body = localFont({
+  src: [
+    { path: "./fonts/inter-400.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/inter-500.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/inter-600.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/inter-700.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-body",
+  display: "swap",
+});
+const mono = localFont({
+  src: [
+    { path: "./fonts/ibm-plex-mono-400.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/ibm-plex-mono-500.woff2", weight: "500", style: "normal" },
+  ],
   variable: "--font-mono",
-  weight: ["400", "500"],
+  display: "swap",
 });
-const gurmukhi = Noto_Sans_Gurmukhi({
-  subsets: ["gurmukhi"],
-  variable: "--font-gurmukhi",
-  weight: ["400", "500", "600"],
-});
+// Gurmukhi (Punjabi) uses a system font stack via --font-gurmukhi in globals.css.
 
 const SITE_URL = "https://www.argoengg.in";
 
@@ -101,7 +115,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html lang="en-IN" className={`${display.variable} ${body.variable} ${mono.variable} ${gurmukhi.variable}`}>
+    <html lang="en-IN" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <body>
         <script
           type="application/ld+json"
